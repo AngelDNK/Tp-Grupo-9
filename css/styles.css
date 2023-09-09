@@ -52,6 +52,10 @@ a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.footer {
-    color: rgba(255, 217, 2, 0.959);
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 150px 10px 15px 10px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
