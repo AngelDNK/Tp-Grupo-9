@@ -22,6 +22,14 @@ label {
     height: 500px;
 }
 
+.Button--Registro {
+    position: relative;
+    left: 90px;
+    color: white;
+    margin: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
 
 .input--box {
     padding: 10px;
@@ -45,14 +53,11 @@ label {
     border: none;
     border-radius: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
+    font-size: 18px;
 }
 
-a {
-    color: white;
-    width: 230px;
-    padding: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+
+
 
 footer {
     display: flex;
@@ -62,16 +67,79 @@ footer {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-nav ul li a {
-    
-    padding: 30px;
-    list-style: none;
+.Perfil {
     display: flex;
     flex-direction: column;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style: none;
+    position: absolute;
+    left: 84%;
+
+}
+
+.Logo {
+    position: absolute;
+    left: 95%;
+    bottom: 87%;
+
+}
+
+.Menu {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Cerrar-Sesion {
+    color: white;
+}
+
+.Menu {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px;
     font-size: 20px;
-    text-decoration: none; /*En este caso saca el Subrayado */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    width: 20%;
+    height: 50%;
+}
+
+.Titulos--Principales {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 250%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 25%;
+    padding: 20px;
+    
+}
+
+.Barra {
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
-    border: 2px solid rgb(61, 60, 60);
     border-radius: 3px;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    margin: 2px;
+    padding: 40px;
+    background-color: rgb(61, 60, 60);
+}
+
+.Barra:hover{
+    background-color: rgba(255, 217, 2, 0.959);
+    
+}
+
+.Menu--Albums{
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
     
 }
