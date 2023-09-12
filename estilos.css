@@ -1,0 +1,48 @@
+nav{
+    padding: 20px;
+    color: blue;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    float: left;
+}
+
+.footer{
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+    padding: 20px;
+}
+
+.footer__p{
+    text-align: center;
+}
+
+body{
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+html{
+    min-height: 100%;
+    position: relative;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+nav ul{
+    list-style: none;
+    overflow: hidden;
+}
+
+nav ul li{
+    float: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
