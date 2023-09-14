@@ -62,9 +62,15 @@ label {
 footer {
     display: flex;
     justify-content: center;
-    padding: 150px 10px 15px 10px;
+    align-items: center;
+    position: absolute;
+    top: 88%;
+    left: -2%;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:  rgb(61, 60, 60);
+    width: 102%;
+    height: 12%;
 }
 
 .Perfil {
@@ -138,35 +144,58 @@ footer {
     background-color: rgba(255, 217, 2, 0.959);
 }
 
-
-
 .Canciones--Menu {
     display: flex;
     align-items: center;
+    justify-content: center;
     overflow-y: scroll;
-    width: 1485px;
+    width: 1400px;
     height: 550px;
     font-size: 100%;
-    position: absolute;
-    left: 410px;
+    position: fixed;
+    left: 440px;
     top: 100px;
-    
-    
-
-
 }
 
 .Canciones--Scroll {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
     position: relative;
-    top: 32%;
-    
-    
-    
+    top: 269px;
+    width: 1370px;
 }
 
 .margen--imagenes{
-    margin: 12px;
+    margin: 0% 5px 5px;
+}
+
+.Cancion--selecionada{
+    display: flex;
+    justify-content: first baseline;
+    position: absolute;
+    top: 440px;
+    left: 90px;
+}
+
+.Cancion--descripcion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 360px;
+    color: white;
+    font-size: 90%;
+    position: absolute;
+    top: 640px;
+    left: 20px;
+    
+}
+
+.Audio {
+    display: block;
+    position: absolute;
+    width: 70%;
+    left: 460px;
+    top: 73%;
+    border-radius: -10%;  
+    
 }
