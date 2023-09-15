@@ -155,16 +155,19 @@ footer {
     position: fixed;
     left: 440px;
     top: 100px;
+    
 }
 
 .Canciones--Scroll {
     position: relative;
     top: 269px;
     width: 1370px;
+    
 }
 
 .margen--imagenes{
     margin: 0% 5px 5px;
+    
 }
 
 .Cancion--selecionada{
@@ -173,6 +176,7 @@ footer {
     position: absolute;
     top: 440px;
     left: 90px;
+    
 }
 
 .Cancion--descripcion{
@@ -188,6 +192,7 @@ footer {
     top: 640px;
     left: 20px;
     
+    
 }
 
 .Audio {
@@ -199,3 +204,4 @@ footer {
     border-radius: -10%;  
     
 }
+
