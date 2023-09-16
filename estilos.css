@@ -6,6 +6,11 @@ nav{
     float: left;
 }
 
+.usuario{
+    position: relative;
+    left: 1100px;
+}
+
 .footer{
     background-color: black;
     position: absolute;
@@ -18,6 +23,118 @@ nav{
 
 .footer__p{
     text-align: center;
+}
+
+main{
+    width: 100%;
+    height: auto;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 70px 100px 60px 70px 80px;
+    grid-template-rows: 20px 100px 40px 60px 90px;
+}
+
+.cld01{
+    background-color: yellow;
+
+}
+
+.cld02{
+    background-color:brown;
+}
+
+.cld03{
+    background-color: blue;
+}
+
+.cld04{
+    background-color: blue;
+}
+
+.cld05{
+    background-color: blue;
+}
+
+.cld06{
+    background-color: blue;
+}
+
+.cld07{
+    background-color: blue;
+}
+
+.cld08{
+    background-color: green;
+}
+
+.cld09{
+    background-color: blue;
+}
+
+.cld10{
+    background-color: blue;
+}
+
+.cld11{
+    background-color: blue;
+}
+
+.cld12{
+    background-color: blue;
+}
+
+.cld13{
+    background-color: blue;
+}
+
+.cld14{
+    background-color: blue;
+}
+
+.cld15{
+    background-color: blue;
+}
+
+.cld16{
+    background-color: blue;
+}
+
+.cld17{
+    background-color: blue;
+}
+
+.cld18{
+    background-color: blue;
+}
+
+.cld19{
+    background-color: violet;
+}
+
+.cld20{
+    background-color: blue;
+}
+
+.cld21{
+    background-color: blue;
+}
+
+.cld22{
+    background-color: blue;
+}
+
+.cld23{
+    background-color: blue;
+}
+
+.cld24{
+    background-color: blue;
+}
+
+.cld25{
+    background-color: blue;
 }
 
 body{
