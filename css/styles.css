@@ -12,28 +12,43 @@ label {
     justify-content: center;
 }
 
-.form {
+.Inicio {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: first baseline;
-    margin-top: 150px;
-    width: 250px;
-    height: 500px;
+    position: fixed;
+    margin: 160px 0% 150px;
+
+
+
+
+}
+
+.Registro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: first baseline;
+    position: fixed;
+    margin: 20px 0% 120px;
 }
 
 .Button--Registro {
-    position: relative;
-    left: 90px;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
     color: white;
-    margin: 25px;
+    margin: 110px 110px -160px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 
 }
 
 .input--box {
-    padding: 10px;
-    width: 250px;
+    padding: 20px;
+    width: 260px;
     margin: 10px;
     background-color: rgb(61, 60, 60);
     border: none;
@@ -47,8 +62,7 @@ label {
 .submit {
     padding: 6px;
     height: 40px;
-    width: 270px;
-    margin-top: 6px;
+    width: 300px;
     background-color: rgba(255, 217, 2, 0.959);
     border: none;
     border-radius: 10px;
@@ -63,15 +77,17 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    text-align: center;
+    position: fixed;
     top: 88%;
     left: -2%;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color:  rgb(61, 60, 60);
+    background-color: rgb(61, 60, 60);
     width: 102%;
     height: 12%;
 }
+
 
 .Perfil {
     display: flex;
@@ -79,27 +95,22 @@ footer {
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     list-style: none;
-    position: absolute;
+    position: fixed;
     left: 85%;
     top: -20px;
 
 }
 
 .Logo {
-    position: absolute;
+    position: fixed;
     left: 96%;
     top: 7px;
 
 }
 
-.Menu {
-    display: flex;
-    flex-direction: column;
-
-}
-
 .Cerrar-Sesion {
     color: white;
+    position: fixed;
 }
 
 .Menu {
@@ -107,7 +118,7 @@ footer {
     flex-direction: column;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: absolute;
+    position: fixed;
     list-style: none;
     width: 20%;
     height: 50%;
@@ -120,10 +131,10 @@ footer {
     font-size: 250%;
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     left: 22%;
     top: -5px;
-    
+
 
 }
 
@@ -138,6 +149,7 @@ footer {
     margin: 2px;
     padding: 40px;
     background-color: rgb(61, 60, 60);
+
 }
 
 .Barra:hover {
@@ -156,30 +168,31 @@ footer {
     left: 440px;
     top: 100px;
     
+
 }
 
 .Canciones--Scroll {
     position: relative;
     top: 269px;
     width: 1370px;
-    
+
 }
 
-.margen--imagenes{
+.margen--imagenes {
     margin: 0% 5px 5px;
-    
+
 }
 
-.Cancion--selecionada{
+.Cancion--selecionada {
     display: flex;
     justify-content: first baseline;
-    position: absolute;
+    position: fixed;
     top: 440px;
     left: 90px;
-    
+
 }
 
-.Cancion--descripcion{
+.Cancion--descripcion {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,20 +201,32 @@ footer {
     width: 360px;
     color: white;
     font-size: 90%;
-    position: absolute;
+    position: fixed;
     top: 640px;
     left: 20px;
-    
-    
+
+
 }
 
 .Audio {
     display: block;
+    position: fixed;
+    width: 1400px;
+    margin: 660px 0px 0px 440px;
+    border-radius: -10%;
+
+}
+
+.favorito {
+    flex-wrap: wrap;
     position: absolute;
-    width: 70%;
-    left: 460px;
-    top: 73%;
-    border-radius: -10%;  
+    margin: 0px 215px;
+    background-color: white;
+    border-radius: 60%;
+    
     
 }
 
+.favorito:hover{
+    background-color:rgba(255, 217, 2, 0.959); ;
+}
