@@ -220,7 +220,7 @@ footer {
 .favorito {
     flex-wrap: wrap;
     position: absolute;
-    margin: 0px 215px;
+    margin: 0px 215px 0px -60px;
     background-color: white;
     border-radius: 60%;
     
