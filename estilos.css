@@ -1,23 +1,71 @@
-nav{
-    padding: 20px;
-    color: blue;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    cursor: pointer;
-    float: left;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navegador{
+    display: inline-block;
+    padding: 5px;
+    font-size: 20px;
+}
+
+nav ul{
+    list-style: none;
+    overflow: hidden;
+    width: 400px;
+}
+
+nav li ul{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 120px;
+    width: 400px;
+    margin: 10%;
+}
+
+nav li:hover ul{
+    display: block;
+}
+
+li a:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    width: 400px;
+    height: 30px;
+    border: 1px solid black;
+    color:white;
+    background-color: black;
+}
+
+li{
+    list-style-type: none;
+    position: relative;
+    width: 120px;
 }
 
 .usuario{
-    position: relative;
+    position: absolute;
     left: 1100px;
+    display: flex;
+    display: inline-block;
+    justify-content: flex-end;
 }
 
 .footer{
     background-color: black;
+    color: white;
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 40px;
-    color: white;
+    height: 10%;
     padding: 20px;
 }
 
@@ -28,113 +76,157 @@ nav{
 main{
     width: 100%;
     height: auto;
+    background-color: beige;
+}
+
+body{
+    background-color: beige;
 }
 
 .contenedor{
+    display: inline-block;
     display: grid;
-    grid-template-columns: 70px 100px 60px 70px 80px;
-    grid-template-rows: 20px 100px 40px 60px 90px;
+    cursor: pointer;
+    grid-template-columns: 170px 110px 160px 170px 180px;
+    grid-template-rows: 120px 100px 140px 160px 190px;
+    align-content: center;
+    justify-content: center;
+    gap: 1px;
+}
+
+.reproductor{
+    display: flex;
+    height: 700px;
+    align-content: center;
+    justify-content: flex-end;
 }
 
 .cld01{
     background-color: yellow;
-
 }
 
 .cld02{
     background-color:brown;
+    padding: 5px;
+    text-align: center;
 }
 
 .cld03{
-    background-color: blue;
+    background-color: brown;
+    padding: 5px;
+    text-align: center;
 }
 
 .cld04{
-    background-color: blue;
+    background-color: brown;
+    padding: 5px;
+    text-align: center;
 }
 
 .cld05{
-    background-color: blue;
+    background-color: brown;
+    padding: 5px;
+    text-align: center;
 }
 
 .cld06{
-    background-color: blue;
+    background-color: white;
+    padding: 5px;
 }
 
 .cld07{
     background-color: blue;
+    padding: 5px;
 }
 
 .cld08{
-    background-color: green;
+    background-color: blue;
+    padding: 5px;
 }
 
 .cld09{
     background-color: blue;
+    padding: 5px;
 }
 
 .cld10{
     background-color: blue;
+    padding: 5px;
 }
 
 .cld11{
-    background-color: blue;
+    background-color: white;
+    padding: 5px;
 }
 
 .cld12{
     background-color: blue;
+    padding: 5px;
 }
 
 .cld13{
     background-color: blue;
+    padding: 5px;
 }
 
 .cld14{
     background-color: blue;
+    padding: 5px;
 }
 
 .cld15{
     background-color: blue;
+    padding: 5px;
 }
 
 .cld16{
-    background-color: blue;
+    background-color:white;
+    padding: 5px;
 }
 
 .cld17{
     background-color: blue;
+    padding: 5px;
 }
 
 .cld18{
     background-color: blue;
+    padding: 5px;
 }
 
 .cld19{
-    background-color: violet;
+    background-color: blue;
+    padding: 5px;
 }
 
 .cld20{
     background-color: blue;
+    padding: 5px;
 }
 
 .cld21{
-    background-color: blue;
+    background-color: white;
+    padding: 5px;
 }
 
 .cld22{
     background-color: blue;
+    padding: 5px;
 }
 
 .cld23{
     background-color: blue;
+    padding: 5px;
 }
 
 .cld24{
     background-color: blue;
+    padding: 5px;
 }
 
 .cld25{
     background-color: blue;
+    padding: 5px;
 }
 
 body{
@@ -151,15 +243,4 @@ header{
     width: 100%;
     position: fixed;
     z-index: 100;
-}
-
-nav ul{
-    list-style: none;
-    overflow: hidden;
-}
-
-nav ul li{
-    float: left;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
 }
