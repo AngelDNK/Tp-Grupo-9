@@ -1,0 +1,146 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+
+/* Estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #81C3D7;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1{
+    font-size: 27px;
+    margin: 0;
+}
+
+a {
+    font-size: 14px;
+    text-decoration: none;
+    align-self: self-start;
+}
+
+/* Estilos del header */
+
+header{
+    background-color: #16425B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: #D9DCD6;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.logo-div{
+    display: flex;
+    align-items:center;
+}
+
+.user-div{
+    display: flex;
+    align-items:center;
+}
+
+.user-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 10px;
+}
+
+header h2{
+    font-size: 18px;
+    margin: 0;
+}
+
+header a {
+    color: #81C3D7;
+}
+
+/* Estilos del nav */
+nav{
+    display: flex;
+    flex-direction: column;
+    background-color: #16425B;
+    width: 20%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #D9DCD6;
+    margin-right: auto;
+}
+
+nav a {
+    width: 100%;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+li{
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #D9DCD6;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+li:hover{
+    background-color: #2F6690;
+}
+
+/* Estilos compartidos */
+.logo-img,
+.avatar-img{
+    height: auto;
+    width: 50px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/* .logo-div h1,
+.user-info h2 {
+    display: inline-block;
+} */
+
+
+
+footer{
+    text-align: center;
+    background-color: #16425B;
+    color: #D9DCD6;
+    margin: auto;
+    margin-top: 0;
+    padding: 20px;
+}
+
+.grid-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+footer h4 {
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    max-width: 100%;
+}
