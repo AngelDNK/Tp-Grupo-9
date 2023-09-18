@@ -83,26 +83,20 @@ body{
     background-color: beige;
 }
 
-.contenedor{
-    display: inline-block;
+.grid-layout{
     display: grid;
-    cursor: pointer;
-    grid-template-columns: 170px 110px 160px 170px 180px;
-    grid-template-rows: 120px 100px 140px 160px 190px;
-    align-content: center;
-    justify-content: center;
-    gap: 1px;
-}
-
-.reproductor{
-    display: flex;
-    height: 700px;
-    align-content: center;
-    justify-content: flex-end;
+    grid-gap: 1px;
+    grid-template-columns: 120px repeat(4, 190px);
+    grid-template-rows: 50px;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    margin: 50px auto;
 }
 
 .cld01{
     background-color: yellow;
+    padding: 5px;
 }
 
 .cld02{
@@ -135,22 +129,22 @@ body{
 }
 
 .cld07{
-    background-color: blue;
+    background-color:darkcyan;
     padding: 5px;
 }
 
 .cld08{
-    background-color: blue;
+    background-color: darkcyan;
     padding: 5px;
 }
 
 .cld09{
-    background-color: blue;
+    background-color: darkcyan;
     padding: 5px;
 }
 
 .cld10{
-    background-color: blue;
+    background-color: darkcyan;
     padding: 5px;
 }
 
@@ -160,22 +154,22 @@ body{
 }
 
 .cld12{
-    background-color: blue;
+    background-color: darkcyan;
     padding: 5px;
 }
 
 .cld13{
-    background-color: blue;
+    background-color: darkcyan;
     padding: 5px;
 }
 
 .cld14{
-    background-color: blue;
+    background-color: darkcyan;
     padding: 5px;
 }
 
 .cld15{
-    background-color: blue;
+    background-color: darkcyan;
     padding: 5px;
 }
 
@@ -185,22 +179,22 @@ body{
 }
 
 .cld17{
-    background-color: blue;
+    background-color: darkcyan;
     padding: 5px;
 }
 
 .cld18{
-    background-color: blue;
+    background-color: darkcyan;
     padding: 5px;
 }
 
 .cld19{
-    background-color: blue;
+    background-color: darkcyan;
     padding: 5px;
 }
 
 .cld20{
-    background-color: blue;
+    background-color: darkcyan;
     padding: 5px;
 }
 
@@ -210,22 +204,22 @@ body{
 }
 
 .cld22{
-    background-color: blue;
+    background-color: darkcyan;
     padding: 5px;
 }
 
 .cld23{
-    background-color: blue;
+    background-color: darkcyan;
     padding: 5px;
 }
 
 .cld24{
-    background-color: blue;
+    background-color: darkcyan;
     padding: 5px;
 }
 
 .cld25{
-    background-color: blue;
+    background-color: darkcyan;
     padding: 5px;
 }
 
