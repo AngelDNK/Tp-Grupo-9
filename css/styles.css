@@ -40,6 +40,7 @@ header {
     margin-left: auto;
 }
 
+
 .header__title {
     display: flex;
     margin-right: auto;
@@ -75,6 +76,31 @@ header {
     margin-right: 5px;
 }
 
+/*Barra de Busqueda */
+.search__bar {
+    border-radius: 100px;
+    width: 1100px;
+    font-size: 30px;
+    color: #ffffff;
+    background-color:#000000;
+    border: 1px solid #1DB954;
+    caret-color: #1DB954;
+    padding: 0px 50px;
+    
+}
+
+
+.bi-search {
+    position: absolute;
+    top: 30px;
+    left: 400px;
+    font-size: 30px;
+    color: #1DB954;
+    
+}
+   
+
+
 /* Estilos del nav */
 nav {
     display: flex;
@@ -88,6 +114,10 @@ nav {
     align-items: center;
     text-align: center;
     order: -1;
+}
+
+.Barra {
+    padding: 40px 120px;
 }
 
 .Menu {
@@ -107,6 +137,7 @@ nav {
     padding-top: 40px;
     padding-bottom: 40px;
     cursor: pointer;
+
 }
 
 .Menu li:hover {
@@ -166,7 +197,7 @@ main {
     display: block;
 }
 
-.bi, 
+ 
 .bi-star {
     color: #1DB954;
     position: absolute;
@@ -176,7 +207,7 @@ main {
     cursor: pointer;
 }
 
-.bi:hover,
+
 .bi-star:hover {
     color: rgb(29, 185, 84, 0.5)
 }
@@ -210,6 +241,17 @@ aside {
     border-radius: 3px;
     margin-bottom: 5px;
 }
+
+.bi-star-fill{
+    color: #1DB954;
+    position: absolute;
+    font-size: 50px;
+    left: 300px;
+}
+
+
+
+
 
 .song__description {
     font-size: 12px;
