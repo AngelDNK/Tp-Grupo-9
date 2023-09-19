@@ -24,6 +24,64 @@ label {
     color: rgb(255, 255, 255);
 }
 
+/* Estilo de Inicio Sesion*/
+
+.container__inicio{
+    margin: 260px;
+}
+
+.Inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: first baseline;
+    position: absolute;
+    margin: 160px 0% 150px;
+    top: 1px;
+    
+}
+
+.Registro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: first baseline;
+    position: absolute;
+    margin: 20px 0% 120px;
+}
+
+.Button--Registro {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    margin: 110px 110px -160px;
+}
+.input--box {
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+    background-color: rgb(61, 60, 60);
+    border: none;
+    border-radius: 4px;
+    caret-color: #1DB954;
+    /*cambia de color la linea */
+    color: white;
+}
+
+.submit {
+    padding: 6px;
+    height: 40px;
+    width: 300px;
+    background-color: #1DB954;
+    border: none;
+    border-radius: 10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, serif;
+    font-size: 18px;
+}
+
+
 /* Estilos del header y del nav */
 .container {
     display: flex;
@@ -96,7 +154,6 @@ header {
     left: 400px;
     font-size: 30px;
     color: #1DB954;
-    
 }
    
 
@@ -247,10 +304,8 @@ aside {
     position: absolute;
     font-size: 50px;
     left: 300px;
+    
 }
-
-
-
 
 
 .song__description {
