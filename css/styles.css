@@ -188,6 +188,8 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    
 }
 
 .Menu li {
@@ -199,6 +201,7 @@ nav {
     padding-top: 40px;
     padding-bottom: 40px;
     cursor: pointer;
+    
 
 }
 
@@ -214,6 +217,7 @@ nav {
 .Menu li a {
     width: 100%;
     color: #ffffff;
+    text-decoration: none;
 }
 
 /* Estilos del content container */
@@ -355,4 +359,147 @@ footer {
     margin-top: 5px;
     border: 2px solid #1DB954;
     border-radius: 3px;
+}
+
+/*Estilos de la Vista Premium*/
+
+.premium-main {
+    display: block;
+    position: relative;
+    margin: 66px;
+    left: 220px;
+}
+
+.Titulos--Principales__premium {
+    left: 20px;
+    
+}
+
+.premium-cards-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: max-content;
+    height: max-content;
+    margin: 0 100px;
+    gap: 30px;
+}
+
+.premium-card {
+    background-color: rgb(59, 59, 59);
+    color: rgb(228, 228, 228);
+    border: 2px solid rgba(211, 211, 211, 0.959);
+    border-radius: 5px;
+    padding: 20px;
+    min-width: 200px;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    box-shadow: rgba(255, 255, 255, 0.274) 0px 0px 200px;
+}
+
+.premium-card__anual {
+    background-color: rgb(235, 235, 235);
+    color: rgb(36, 36, 36);
+    border: 3px solid rgb(36, 36, 36);
+}
+
+.premium-card-heading-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 70px;
+}
+
+.premium-card-span {
+    background-color: rgba(255, 187, 0, 0.377);
+    padding: 4px;
+    border-radius: 4px;
+    color: rgb(102, 73, 0);
+}
+
+.premium-card-itemList {
+    position: relative;
+    top: -30px;
+}
+
+.premium-card-img-container {
+    background-color: rgba(218, 190, 32, 0.623);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.premium-card-img-container__infinito {
+    background-color: rgba(45, 138, 201, 0.623);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.premium-card-radio-button {
+    width: 90%;
+    height: 40px;
+    margin: 0 auto;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.premium-card-button-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 75vw;
+    margin: 0px -105px;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.premium-card-button {
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.premium-card-button:hover {
+    background-color: goldenrod;
+    color: white;
+}
+
+.premium-card-button__cancelar:hover {
+    background-color: rgb(134, 67, 67);
+    color: white;
+}
+
+.premium-card-button__avanzar:hover {
+    background-color: rgb(67, 134, 76);
+    color: white;
+}
+
+.premium-card-price {
+    font-size: 1.5rem;
+}
+
+.premium-card-discount {
+    padding: 4px;
+    border-radius: 4px;
+    color: rgb(48, 170, 88);
+    font-size: large;
+}
+
+.premium-card-itemList__item {
+    margin-top: 10px;
 }
