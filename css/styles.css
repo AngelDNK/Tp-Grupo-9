@@ -12,10 +12,6 @@ body {
     margin: 2px;
 }
 
-a{
-    text-decoration: none;
-}
-
 input {
     outline: none;
 }
@@ -25,6 +21,15 @@ label {
 }
 
 /* Estilo de Inicio Sesion*/
+
+.container__Registro {
+    margin: 373px;
+}
+
+.link__opcionPremium {
+    color: #ffffff;
+    margin: 15px; 
+}
 
 .container__inicio{
     margin: 260px;
@@ -56,7 +61,7 @@ label {
     align-items: center;
     position: absolute;
     color: white;
-    margin: 110px 110px -160px;
+    margin: 110px 117px -150px;
 }
 .input--box {
     padding: 20px;
