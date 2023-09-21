@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximumscale=1">
     <link rel="stylesheet" href="estilos.css">
     <title>Canciones Favoritas</title>
 </head>
@@ -12,45 +13,61 @@
             <h1>Mis canciones favoritas</h1>
             <h2>Nombre Usuario</h2>
             <a href="IniciarSesion.html">Cerrar sesion</a>
-            <img src="img/png-transparent-computer-icons-user-user-icon.png" alt="Usuario" width="50px">
+            <img class = "Imagen-Usuario" src="img/png-transparent-computer-icons-user-user-icon.png" alt="Usuario" width="50px">
         </section>
     </header>
-    <nav class="navegador">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Buscar</a></li>
-        <li><a href="#">Mis albums</a></li>
-        <li><a href="#">Mis favoritas</a></li>
+
+    <nav>
+      <ul class="navegador">
+        <li><a class = "Barra" href="#">Home</a></li>
+        <li><a class = "Barra" href="#">Buscar</a></li>
+        <li><a class = "Barra" href="#">Mis albums</a></li>
+        <li><a class = "Barra" href="#">Mis favoritas</a></li>
       </ul>
     </nav>
-    
-     <section class="grid-layout">
-        <div class="cld01"></div>
-        <div class="cld02">Cancion</div>   
-        <div class="cld03">Album</div>
-        <div class="cld04">Duración</div>
-        <div class="cld05">Reproducciones</div>
-        <div class="cld06"><img src="img/png-transparent-computer-icons-social-media-google-play-button-social-media-angle-text-triangle-thumbnail.png" alt="Reproducir" width="110px"></div>
-        <div class="cld07"><img src="img/canserbero cancion 1.jpg" alt="Canserbero - Na" width="180px"></div>
-        <div class="cld08"><img src="img/canserbero album 1.jpg" alt="Vida" width="180px"></div>
-        <div class="cld09">6:22</div>
-        <div class="cld10">16.000.000</div>
-        <div class="cld11"><img src="img/png-transparent-computer-icons-social-media-google-play-button-social-media-angle-text-triangle-thumbnail.png" alt="Reproducir" width="110px"></div>
-        <div class="cld12"><img src="img/salando las heridas cancion 2.jpg" alt="Patricio Rey y sus redonditos de ricota - Salando las heridas" width="180px"></div>
-        <div class="cld13"><img src="img/patricio-rey-logo-3048C74D38-seeklogo.com.png" alt="Los Redondos" width="180px"></div>
-        <div class="cld14">5:02</div>
-        <div class="cld15">4.000.000</div>
-        <div class="cld16"><img src="img/png-transparent-computer-icons-social-media-google-play-button-social-media-angle-text-triangle-thumbnail.png" alt="Reproducir" width="110px"></div>
-        <div class="cld17">Cancion 3</div>
-        <div class="cld18">Album 3</div>
-        <div class="cld19">4:00</div>
-        <div class="cld20">3500</div>
-        <div class="cld21"><img src="img/png-transparent-computer-icons-social-media-google-play-button-social-media-angle-text-triangle-thumbnail.png" alt="Reproducir" width="110px"></div>
-        <div class="cld22">Cancion 4</div>
-        <div class="cld23">Album 4</div>
-        <div class="cld24">3:00</div>
-        <div class="cld25">1000</div>
-    </section> 
+
+    <main>
+        <section class="contenedor-canciones">
+            <div class="cld01"></div>
+            <div class="cld02">Cancion</div>   
+            <div class="cld03">Album</div>
+            <div class="cld04">Duración</div>
+            <div class="cld05">Reproducciones</div>
+            <div class="cld06"><img src="img/boton play.png" alt="Reproducir" width="110px"></div>
+            <div class="cld07"><img src="img/canserbero cancion 1.jpg" alt="Canserbero - Na" width="180px"></div>
+            <div class="cld08"><img src="img/canserbero album 1.jpg" alt="Vida" width="180px"></div>
+            <div class="cld09">6:22</div>
+            <div class="cld10">16.000.000</div>
+            <div class="cld11"><img src="img/boton play.png" alt="Reproducir" width="110px"></div>
+            <div class="cld12"><img src="img/salando las heridas cancion 2.jpg" alt="Patricio Rey y sus redonditos de ricota - Salando las heridas" width="180px"></div>
+            <div class="cld13"><img src="img/patricio-rey-logo-3048C74D38-seeklogo.com.png" alt="Los Redondos" width="180px"></div>
+            <div class="cld14">5:02</div>
+            <div class="cld15">4.000.000</div>
+            <div class="cld16"><img src="img/boton play.png" alt="Reproducir" width="110px"></div>
+            <div class="cld17"><img src="img/ciro cancion 3.jpg" alt="Ciro - Sigue y No Cedas" width="180"></div>
+            <div class="cld18"><img src="img/ciro album 3.jpg" alt="Ciro - Sigue y No Cedas" width="180"></div>    
+            <div class="cld19">5:03</div>
+            <div class="cld20">11.000.000</div>
+            <div class="cld21"><img src="img/boton play.png" alt="Reproducir" width="110px"></div>
+            <div class="cld22">Cancion 4</div>
+            <div class="cld23">Album 4</div>
+            <div class="cld24">3:00</div>
+            <div class="cld25">1000</div>
+            <audio class="Audio" controls="audio" id="audio" preload="auto" tabindex="auto" type="audio/mpeg" muted="auto"></audio>
+        </section> 
+    </main>
+     
+
+    <section>
+        <article> 
+            <img class="Cancion--selecionada" src="./img/Cancion12.webp" alt="" width="200" height="200">
+            <p class="Cancion--descripcion">Random Access Memories es el cuarto y último álbum de estudio del dúo
+                francés Daft Punk.
+                Se publicó oficialmente el 17 de mayo en Australia, el 20 de mayo en Reino Unido​ y el 21 de mayo de
+                2013 en Estados Unidos, ​ bajo licencia de Daft Life
+            </p>
+        </article>
+    </section>
 
     <footer class="footer">
         <article>

@@ -1,13 +1,59 @@
+@media (max-width: 600px){
+    .navegador .usuario .contenedor-canciones .footer{
+        display: none;
+        width: 100%;
+        min-width: none;
+    }
+
+    .contenedor-canciones{
+        max-width: none;
+        width: 100%;
+        margin: 0;
+        padding: 20px 20px;
+    }
+}
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
+body{
+    margin: 0;
+    margin-bottom: 40px;
+    background-color: black;
+}
+
+html{
+    min-height: 100%;
+    position: relative;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
 .navegador{
     display: inline-block;
     padding: 5px;
     font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.Barra{
+    padding: 20px;
+    padding-bottom: 20px;
+    text-align:center
 }
 
 nav ul{
@@ -31,7 +77,7 @@ nav li:hover ul{
 
 li a:hover{
     color: #000;
-    background-color: #fff;
+    background-color: greenyellow;
 }
 
 li a{
@@ -57,41 +103,47 @@ li{
     display: flex;
     display: inline-block;
     justify-content: flex-end;
+    color: greenyellow;
+
+}
+
+.Imagen-Usuario{
+    border-radius: 100%;
 }
 
 .footer{
-    background-color: black;
+    background-color: gray;
     color: white;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
-    height: 10%;
-    padding: 20px;
+    height: 1%;
+    padding: 50px;
+
+
 }
 
 .footer__p{
     text-align: center;
+    font-weight: 600;
 }
 
-main{
-    width: 100%;
-    height: auto;
-    background-color: beige;
+.Audio{
+
 }
 
-body{
-    background-color: beige;
-}
-
-.grid-layout{
+.contenedor-canciones{
     display: grid;
     grid-gap: 1px;
     grid-template-columns: 120px repeat(4, 190px);
     grid-template-rows: 50px;
     width: 80%;
     height: 100%;
-    background-color: white;
-    margin: 50px auto;
+    margin: 0 auto;
+    position: relative;
+    left: 30%;
+    border: 5px solid gray;
+    overflow: auto;
 }
 
 .cld01{
@@ -100,31 +152,40 @@ body{
 }
 
 .cld02{
-    background-color:brown;
+    background-color:greenyellow;
     padding: 5px;
     text-align: center;
+    font-weight: 800;
+    font-size: x-large;
 }
 
 .cld03{
-    background-color: brown;
+    background-color: greenyellow;
     padding: 5px;
     text-align: center;
+    font-weight: 800;
+    font-size: x-large;
 }
 
 .cld04{
-    background-color: brown;
+    background-color: greenyellow;
     padding: 5px;
     text-align: center;
+    font-weight: 800;
+    font-size: x-large;
 }
 
 .cld05{
-    background-color: brown;
+    background-color:greenyellow;
     padding: 5px;
     text-align: center;
+    font-weight: 800;
+    font-size: x-large;
+    
 }
 
 .cld06{
-    background-color: white;
+    background-color: black;
     padding: 5px;
 }
 
@@ -141,15 +202,19 @@ body{
 .cld09{
     background-color: darkcyan;
     padding: 5px;
+    font-weight: 800;
+    font-size: x-large;
 }
 
 .cld10{
     background-color: darkcyan;
     padding: 5px;
+    font-weight: 800;
+    font-size: x-large;
 }
 
 .cld11{
-    background-color: white;
+    background-color:black;
     padding: 5px;
 }
 
@@ -166,15 +231,19 @@ body{
 .cld14{
     background-color: darkcyan;
     padding: 5px;
+    font-weight: 800;
+    font-size: x-large;
 }
 
 .cld15{
     background-color: darkcyan;
     padding: 5px;
+    font-weight: 800;
+    font-size: x-large;
 }
 
 .cld16{
-    background-color:white;
+    background-color:black;
     padding: 5px;
 }
 
@@ -191,15 +260,19 @@ body{
 .cld19{
     background-color: darkcyan;
     padding: 5px;
+    font-weight: 800;
+    font-size: x-large;
 }
 
 .cld20{
     background-color: darkcyan;
     padding: 5px;
+    font-weight: 800;
+    font-size: x-large;
 }
 
 .cld21{
-    background-color: white;
+    background-color:black;
     padding: 5px;
 }
 
@@ -216,25 +289,14 @@ body{
 .cld24{
     background-color: darkcyan;
     padding: 5px;
+    font-weight: 800;
+    font-size: x-large;
 }
 
 .cld25{
     background-color: darkcyan;
     padding: 5px;
+    font-weight: 800;
+    font-size: x-large;
 }
 
-body{
-    margin: 0;
-    margin-bottom: 40px;
-}
-
-html{
-    min-height: 100%;
-    position: relative;
-}
-
-header{
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-}
