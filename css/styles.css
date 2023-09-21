@@ -32,7 +32,11 @@ label {
 }
 
 .container__inicio{
-    margin: 260px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 410px;
+    
 }
 
 .Inicio {
@@ -41,8 +45,9 @@ label {
     justify-content: center;
     align-items: first baseline;
     position: absolute;
-    margin: 160px 0% 150px;
+    margin: 250px 0% 100px;
     top: 1px;
+    
     
 }
 
@@ -503,3 +508,4 @@ footer {
 .premium-card-itemList__item {
     margin-top: 10px;
 }
+
