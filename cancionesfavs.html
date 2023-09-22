@@ -1,65 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximumscale=1">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <title>Canciones Favoritas</title>
 </head>
 <body>
-    <header>
-        <section class="encabezado">
-            <h1>Mis canciones favoritas</h1>
-            <h2>Nombre Usuario</h2>
-            <a href="IniciarSesion.html">Cerrar sesion</a>
-            <img class = "Imagen-Usuario" src="img/png-transparent-computer-icons-user-user-icon.png" alt="Usuario" width="50px">
-        </section>
-    </header>
+    <div class="container">
+        <header>
+            <div class="header__title">
+                <h1>Mis Canciones Favoritas</h1>
+            </div>
+            <div class="profile">
+                <div class="profile__info">
+                    <h3 class="profile__title">Nombre de usuario</h3>
+                    <a href="" class="profile__link-session">Cerrar sesión</a>
+                </div>
+                <a class="profile__link" href="index.html">
+                    <img src="img/png-transparent-computer-icons-user-user-icon.png" alt="Avatar" class="profile__image">
+                </a>
+            </div>
+        </header>
 
-    <nav>
-      <ul class="navegador">
-        <li><a class = "Barra" href="#">Home</a></li>
-        <li><a class = "Barra" href="#">Buscar</a></li>
-        <li><a class = "Barra" href="#">Mis albums</a></li>
-        <li><a class = "Barra" href="#">Mis favoritas</a></li>
-      </ul>
-    </nav>
+        <nav>
+            <ul class="Menu">
+                <li>
+                    <a class="Barra" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="Barra" href="Buscar.html">Buscar</a>
+                </li>
+                <li>
+                    <a class="Barra" href="Misalbums.html">Mis albums</a>
+                </li>
+                <li>
+                    <a class="Barra" href="MisFavoritas.html">Mis Favoritas</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
-    <main>
-        <section class="contenedor-canciones">
-            <div class="cld01"></div>
-            <div class="cld02">Cancion</div>   
-            <div class="cld03">Album</div>
-            <div class="cld04">Duración</div>
-            <div class="cld05">Reproducciones</div>
-            <div class="cld06"><img src="img/boton play.png" alt="Reproducir" width="110px"></div>
-            <div class="cld07"><img src="img/canserbero cancion 1.jpg" alt="Canserbero - Na" width="180px"></div>
-            <div class="cld08"><img src="img/canserbero album 1.jpg" alt="Vida" width="180px"></div>
-            <div class="cld09">6:22</div>
-            <div class="cld10">16.000.000</div>
-            <div class="cld11"><img src="img/boton play.png" alt="Reproducir" width="110px"></div>
-            <div class="cld12"><img src="img/salando las heridas cancion 2.jpg" alt="Patricio Rey y sus redonditos de ricota - Salando las heridas" width="180px"></div>
-            <div class="cld13"><img src="img/patricio-rey-logo-3048C74D38-seeklogo.com.png" alt="Los Redondos" width="180px"></div>
-            <div class="cld14">5:02</div>
-            <div class="cld15">4.000.000</div>
-            <div class="cld16"><img src="img/boton play.png" alt="Reproducir" width="110px"></div>
-            <div class="cld17"><img src="img/ciro cancion 3.jpg" alt="Ciro - Sigue y No Cedas" width="180"></div>
-            <div class="cld18"><img src="img/ciro album 3.jpg" alt="Ciro - Sigue y No Cedas" width="180"></div>    
-            <div class="cld19">5:03</div>
-            <div class="cld20">11.000.000</div>
-            <div class="cld21"><img src="img/boton play.png" alt="Reproducir" width="110px"></div>
-            <div class="cld22">Cancion 4</div>
-            <div class="cld23">Album 4</div>
-            <div class="cld24">3:00</div>
-            <div class="cld25">1000</div>
-            <audio class="Audio" controls="audio" id="audio" preload="auto" tabindex="auto" type="audio/mpeg" muted="auto"></audio>
-        </section> 
-    </main>
-     
+    <div class="content__container">
+        <aside>
+            <section class="song__section">
+                <article class="song__article">
+                    <img src="./img/Cancion12.webp" alt="Canción sonando" class="song__image">
+                    <p class="song__description">
+                        <b>
+                            Random Access Memories es el cuarto y último álbum de estudio del dúo francés Daft Punk.
+                        </b>
+                    </p>
+                    <p class="song__description">
+                        <b>
+                            Se publicó oficialmente el 17 de mayo en Australia, el 20 de mayo en Reino Unido y el 21 de mayo
+                            de 2013 en Estados Unidos, bajo licencia de Daft Life
+                        </b>
+                    </p>
+                </article>
+            </section>
+        </aside>
+    
+        <main>
+            <section class="contenedor-canciones">
+                <div class="cld01"></div>
+                <div class="cld02">Cancion</div>
+                <div class="cld03">Album</div>
+                <div class="cld04">Duración</div>
+                <div class="cld05">Reproducciones</div>
+                <div class="cld06"><img src="img/boton play.png" alt="Reproducir" width="110px"></div>
+                <div class="cld07"><img src="img/canserbero cancion 1.jpg" alt="Canserbero - Na" width="180px"></div>
+                <div class="cld08"><img src="img/canserbero album 1.jpg" alt="Vida" width="180px"></div>
+                <div class="cld09">6:22</div>
+                <div class="cld10">16.000.000</div>
+                <div class="cld11"><img src="img/boton play.png" alt="Reproducir" width="110px"></div>
+                <div class="cld12"><img src="img/salando las heridas cancion 2.jpg"
+                        alt="Patricio Rey y sus redonditos de ricota - Salando las heridas" width="180px"></div>
+                <div class="cld13"><img src="img/patricio-rey-logo-3048C74D38-seeklogo.com.png" alt="Los Redondos"
+                        width="180px"></div>
+                <div class="cld14">5:02</div>
+                <div class="cld15">4.000.000</div>
+                <div class="cld16"><img src="img/boton play.png" alt="Reproducir" width="110px"></div>
+                <div class="cld17"><img src="img/ciro cancion 3.jpg" alt="Ciro - Sigue y No Cedas" width="180"></div>
+                <div class="cld18"><img src="img/ciro album 3.jpg" alt="Ciro - Sigue y No Cedas" width="180"></div>
+                <div class="cld19">5:03</div>
+                <div class="cld20">11.000.000</div>
+                <div class="cld21"><img src="img/boton play.png" alt="Reproducir" width="110px"></div>
+                <div class="cld22">Cancion 4</div>
+                <div class="cld23">Album 4</div>
+                <div class="cld24">3:00</div>
+                <div class="cld25">1000</div>
+            </section>
+        </main>
+    </div>
+
+    <section class="audio__section">
+        <article class="audio__article">
+            <audio controls="audio" id="audio" preload="auto" tabindex="auto" type="audio/mpeg" muted="auto"
+                class="audio">
+            </audio>
+        </article>
+    </section>
 
     <section>
-        <article> 
+        <article>
             <img class="Cancion--selecionada" src="./img/Cancion12.webp" alt="" width="200" height="200">
             <p class="Cancion--descripcion">Random Access Memories es el cuarto y último álbum de estudio del dúo
                 francés Daft Punk.
@@ -69,11 +118,10 @@
         </article>
     </section>
 
-    <footer class="footer">
-        <article>
-            <p class="footer__p">Integrante 1 (Octavio Sancho, 39510073) Integrante 2 (Tobias Rodriguez, 44513673) Integrante 3 (Angel Leyes, 42199664)</p>
-            <p class="footer__p">Integrante 4 (Ezequiel Lage, 38175930) Integrante 5 (Agustin Dangelo, 44263625) Integrante 6 (Juan Ignacio Ronquillo, )</p>
-        </article>
+    <footer>
+        <p>Octavio Sancho | 39.510.073 - Tobias Rodriguez | 44.513.673 - Angel Leyes| 42.199.664</p>
+        <p>Ezequiel Lage | 38.175.930 - Agustin Dangelo | 44.263.625 - Juan Ignacio Ronquillo | 44.482.636</p>
     </footer>
 </body>
+
 </html>
