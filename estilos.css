@@ -21,19 +21,19 @@
 
 body{
     margin: 0;
-    margin-bottom: 40px;
     background-color: black;
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+    padding: 0;
+    align-items: stretch;
+
+    
 }
 
 html{
     min-height: 100%;
     position: relative;
-}
-
-main{
-    width: 100%;
-    height: 100%;
-    background-color: black;
 }
 
 header{
@@ -48,18 +48,28 @@ header{
     font-size: 20px;
     font-weight: 700;
     text-align: center;
+    width: 60%;
+    height: 5%;
 }
 
 .Barra{
     padding: 20px;
     padding-bottom: 20px;
-    text-align:center
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    width: 60%;
+    height: 5%;
 }
 
 nav ul{
     list-style: none;
     overflow: hidden;
-    width: 400px;
+    width: 60%;
+    height: 5%;
 }
 
 nav li ul{
@@ -114,12 +124,12 @@ li{
 .footer{
     background-color: gray;
     color: white;
-    position: relative;
+    position: absolute;
     bottom: 0;
     width: 100%;
     height: 1%;
-    padding: 50px;
-
+    padding: 60px;
+    text-align: center;
 
 }
 
@@ -132,53 +142,77 @@ li{
 
 }
 
+main{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    left: 10%;
+    display: flex;
+    padding: 20px;
+}
+
 .contenedor-canciones{
     display: grid;
     grid-gap: 1px;
     grid-template-columns: 120px repeat(4, 190px);
     grid-template-rows: 50px;
-    width: 80%;
+    width: 100%;
     height: 100%;
-    margin: 0 auto;
     position: relative;
-    left: 30%;
+    left: 10%;
     border: 5px solid gray;
     overflow: auto;
+    
+    
 }
 
 .cld01{
     background-color: yellow;
     padding: 5px;
+    
 }
 
 .cld02{
+    display: flex;
     background-color:greenyellow;
     padding: 5px;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     font-weight: 800;
     font-size: x-large;
 }
 
 .cld03{
-    background-color: greenyellow;
+    display: flex;
+    background-color:greenyellow;
     padding: 5px;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     font-weight: 800;
     font-size: x-large;
 }
 
 .cld04{
-    background-color: greenyellow;
+    display: flex;
+    background-color:greenyellow;
     padding: 5px;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     font-weight: 800;
     font-size: x-large;
 }
 
 .cld05{
+    display: flex;
     background-color:greenyellow;
     padding: 5px;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     font-weight: 800;
     font-size: x-large;
     
@@ -201,14 +235,14 @@ li{
 
 .cld09{
     background-color: darkcyan;
-    padding: 5px;
+    padding: 8px;
     font-weight: 800;
     font-size: x-large;
 }
 
 .cld10{
     background-color: darkcyan;
-    padding: 5px;
+    padding: 8px;
     font-weight: 800;
     font-size: x-large;
 }
@@ -230,14 +264,14 @@ li{
 
 .cld14{
     background-color: darkcyan;
-    padding: 5px;
+    padding: 8px;
     font-weight: 800;
     font-size: x-large;
 }
 
 .cld15{
     background-color: darkcyan;
-    padding: 5px;
+    padding: 8px;
     font-weight: 800;
     font-size: x-large;
 }
@@ -259,14 +293,14 @@ li{
 
 .cld19{
     background-color: darkcyan;
-    padding: 5px;
+    padding: 8px;
     font-weight: 800;
     font-size: x-large;
 }
 
 .cld20{
     background-color: darkcyan;
-    padding: 5px;
+    padding: 8px;
     font-weight: 800;
     font-size: x-large;
 }
@@ -288,14 +322,14 @@ li{
 
 .cld24{
     background-color: darkcyan;
-    padding: 5px;
+    padding: 8px;
     font-weight: 800;
     font-size: x-large;
 }
 
 .cld25{
     background-color: darkcyan;
-    padding: 5px;
+    padding: 8px;
     font-weight: 800;
     font-size: x-large;
 }
