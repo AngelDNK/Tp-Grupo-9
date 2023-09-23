@@ -1,0 +1,82 @@
+.article--pagar{
+    text-align: center;
+    width: 95%;
+    margin-top: 25%;
+    margin-left: auto;
+}
+
+.pagar{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    Justify-content: space-around;
+    margin: 5% 2.5% 30%;
+}
+
+.input--pagar{
+ width: 90%;
+ padding: 2.5%;
+ text-align: center;
+}
+
+.label--pagar{
+    padding: 5%;
+}
+
+
+
+@media screen and (min-width:47em){
+.article--pagar{
+    text-align: center;
+    width: 80%;
+    margin-top: 25%;
+    margin-left: auto;
+}
+
+.pagar{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    Justify-content: space-around;
+    margin: 5% 4% 30%;
+}
+
+.input--pagar{
+ width: 70%;
+ padding: 2.5%;
+ text-align:left;
+ margin-left: 10%;
+}
+
+.label--pagar{
+    padding: 5%;
+}
+}
+
+
+@media screen and (min-width:60em){
+    
+    .article--pagar{
+        text-align: center;
+        width: 65%;
+        margin-top: 10%;
+        margin-left: auto;
+    }
+    .pagar{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        Justify-content: space-around;
+        margin: 5% 2.5% 10%;
+    }
+    
+    .input--pagar{
+     width: 35%;
+     padding: 2.5%;
+     text-align: left;
+    }
+    
+    .label--pagar{
+        padding: 5%;
+    }
+}
