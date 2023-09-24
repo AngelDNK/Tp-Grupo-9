@@ -273,75 +273,81 @@ footer {
 }
 
 main{
-    width: 85%;
-    height: 85%;
+    width: 80%;
     background-color: black;
     position: relative;
     display: flex;
     flex-direction: column;
-    float: right;
-    display: flex;
-    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-left: auto;
+    margin: auto;
+    border-radius: 3px;
+
+ 
+    
 }
 
 .contenedor-canciones{
     display: grid;
-    grid-gap: 1px;
-    grid-template-columns: 12% repeat(4, 22%);
+    grid-gap: 2px;
+    grid-template-columns: 13% repeat(4, 22%);
     grid-template-rows: auto;
     width: 85%;
     height: 85%;
     position: relative;
-    border: 5px solid gray;
+    border: 2px solid #1DB954;
     overflow: auto;
     float: auto;
+    border-radius: 3px;
     
 }
 
 .cld01{
-    background-color: yellow;
+    background-color: ghostwhite;
     padding: 5px;
     
 }
 
 .cld02{
     display: flex;
-    background-color:greenyellow;
+    background-color: #1DB954;
     padding: 5px;
     justify-content: center;
     align-items: center;
     font-weight: 800;
-    font-size: x-large;
+    font-size: large;
 }
 
 .cld03{
     display: flex;
-    background-color:greenyellow;
+    background-color: #1DB954;
     padding: 5px;
     justify-content: center;
     align-items: center;
     font-weight: 800;
-    font-size: x-large;
+    font-size: large;
 }
 
 .cld04{
     display: flex;
-    background-color:greenyellow;
+    background-color: #1DB954;
     padding: 5px;
     justify-content: center;
     align-items: center;
     font-weight: 800;
-    font-size: x-large;
+    font-size: large;
 }
 
 .cld05{
     display: flex;
-    background-color:greenyellow;
+    background-color: #1DB954;
     padding: 5px;
     justify-content: center;
     align-items: center;
     font-weight: 800;
-    font-size: x-large;
+    font-size: large;
     
 }
 
@@ -351,27 +357,29 @@ main{
 }
 
 .cld07{
-    background-color:darkcyan;
-    padding: 5px;
+    background-color:black;
+    padding-top: 1px;
 }
 
 .cld08{
-    background-color: darkcyan;
-    padding: 5px;
+    background-color: black;
+    padding: 1px;
 }
 
 .cld09{
-    background-color: darkcyan;
+    background-color: black;
     padding: 8px;
     font-weight: 800;
     font-size: x-large;
+    color: #ffffff;
 }
 
 .cld10{
-    background-color: darkcyan;
+    background-color: black;
     padding: 8px;
     font-weight: 800;
     font-size: x-large;
+    color: #ffffff;
 }
 
 .cld11{
@@ -380,27 +388,29 @@ main{
 }
 
 .cld12{
-    background-color: darkcyan;
-    padding: 5px;
+    background-color:black;
+    padding: 1px;
 }
 
 .cld13{
-    background-color: darkcyan;
-    padding: 5px;
+    background-color:black;
+    padding: 1px;
 }
 
 .cld14{
-    background-color: darkcyan;
+    background-color:black;
     padding: 8px;
     font-weight: 800;
     font-size: x-large;
+    color: #ffffff;
 }
 
 .cld15{
-    background-color: darkcyan;
+    background-color:black;
     padding: 8px;
     font-weight: 800;
     font-size: x-large;
+    color: #ffffff;
 }
 
 .cld16{
@@ -409,27 +419,29 @@ main{
 }
 
 .cld17{
-    background-color: darkcyan;
-    padding: 5px;
+    background-color:black;
+    padding: 1px;
 }
 
 .cld18{
-    background-color: darkcyan;
-    padding: 5px;
+    background-color:black;
+    padding: 1px;
 }
 
 .cld19{
-    background-color: darkcyan;
+    background-color:black;
     padding: 8px;
     font-weight: 800;
     font-size: x-large;
+    color: #ffffff;
 }
 
 .cld20{
-    background-color: darkcyan;
+    background-color:black;
     padding: 8px;
     font-weight: 800;
     font-size: x-large;
+    color: #ffffff;
 }
 
 .cld21{
@@ -438,26 +450,89 @@ main{
 }
 
 .cld22{
-    background-color: darkcyan;
-    padding: 5px;
+    background-color:black;
+    padding: 1px;
 }
 
 .cld23{
-    background-color: darkcyan;
-    padding: 5px;
+    background-color:black;
+    padding: 1px;
 }
 
 .cld24{
-    background-color: darkcyan;
+    background-color:black;
     padding: 8px;
     font-weight: 800;
     font-size: x-large;
+    color: #ffffff;
 }
 
 .cld25{
-    background-color: darkcyan;
+    background-color:black;
     padding: 8px;
     font-weight: 800;
     font-size: x-large;
+    color: #ffffff;
 }
 
+.cld26{
+    background-color:black;
+    padding: 5px;
+}
+
+.cld27{
+    background-color:black;
+    padding: 1px;
+}
+
+.cld28{
+    background-color:black;
+    padding: 1px;
+}
+
+.cld29{
+    background-color:black;
+    padding: 8px;
+    font-weight: 800;
+    font-size: x-large;
+    color: #ffffff;
+}
+
+.cld30{
+    background-color:black;
+    padding: 8px;
+    font-weight: 800;
+    font-size: x-large;
+    color: #ffffff;
+}
+
+.cld31{
+    background-color:black;
+    padding: 5px;
+}
+
+.cld32{
+    background-color:black;
+    padding: 1px;
+}
+
+.cld33{
+    background-color:black;
+    padding: 1px;
+}
+
+.cld34{
+    background-color:black;
+    padding: 8px;
+    font-weight: 800;
+    font-size: x-large;
+    color: #ffffff;
+}
+
+.cld35{
+    background-color:black;
+    padding: 8px;
+    font-weight: 800;
+    font-size: x-large;
+    color: #ffffff;
+}
