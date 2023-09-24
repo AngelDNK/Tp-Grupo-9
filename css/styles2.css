@@ -76,6 +76,7 @@ header {
 .profile__info {
     margin-right: 10px;
     margin-left: 10px;
+    text-align: left;
 }
 
 .profile__link-session {
@@ -216,10 +217,10 @@ main {
 /* Porcentajes, responsive, usar em, también con responsive */
 .songs__star {
     width: 10%;
-    left: 87%;
+    left: 85%;
     top: 5%;
     position: absolute;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 .songs__star:hover {
@@ -238,7 +239,7 @@ main {
     display: flex;
     text-align: center;
     justify-content: center;
-    width: 100%;
+    width: 99%;
     background-color: #1DB954;
     border-radius: 10px;
     padding: 15px 5px 15px 5px;

@@ -73,6 +73,7 @@ header {
     color: #1DB954;
     text-decoration: underline;
     font-size: 15px;
+    margin-right: auto;
 }
 
 .profile__link-session:hover {
