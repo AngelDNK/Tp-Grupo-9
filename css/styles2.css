@@ -9,9 +9,11 @@
 body {
     background-color: rgb(0, 0, 0);
     font-family: 'Poppins', sans-serif;
-    margin: 2px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    width: fit-content;
+    height: fit-content;
+    scroll-behavior: smooth;
 }
 
 a{
@@ -29,25 +31,32 @@ label {
 /* Estilos del header y del nav */
 .container {
     display: flex;
-    flex-direction: row;
     width: 80%;
-    background-color: #1DB954;
+    height: fit-content;
+    margin-top: 2px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: auto;
 }
 
-.column_container {
+.column__container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 19%;
     order: -1;
+    padding: 2px;
+    margin-left: 10px;
 }
 
-/* Estilos del header */
 header {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 10px;
     color: #ffffff;
     margin-left: auto;
+    height: fit-content;
 }
 
 .header__title {
@@ -85,20 +94,14 @@ header {
     margin-right: 5px;
 }
 
-/* Estilos del nav */
 nav {
     display: flex;
     flex-direction: column;
-    width: 20%;
-    margin-right: 10px;
-    margin-left: 10px;
-    padding: 3px;
-    margin-bottom: 40px;
-
+    width: 100%;
+    height: fit-content;
     background-color: #000000;
     align-items: center;
     text-align: center;
-    order: -1;
 }
 
 .Menu {
@@ -111,12 +114,12 @@ nav {
 
 .Menu li {
     width: 100%;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    margin-top: 2px;
+    margin-bottom: 2px;
     border: 1px solid #1DB954;
     border-radius: 5px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     cursor: pointer;
 }
 
@@ -134,86 +137,28 @@ nav {
     color: #ffffff;
 }
 
-/* Estilos del content container */
-.content__container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-/* Estilos del main */
-main {
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    margin-top: 27px;
-}
-
-/* Estilos de las canciones */
-.songs__section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    text-align: center;
-    width: 99%;
-    padding: 10px;
-    overflow-y: scroll;
-    height: 900px;
-    margin-right: auto;
-    margin-left: 15px;
-}
-
-.songs__article {
-    width: 32%;
-    margin-bottom: 15px;
-    margin-right: 5px;
-    position: relative;
-}
-
-.songs__image {
-    width: 90%;
-    height: 90%;
-    border: 2px solid #1DB954;
-    display: block;
-}
-
-/* Porcentajes, responsive, usar em, también con responsive */
-.bi, 
-.bi-star {
-    color: #1DB954;
-    position: absolute;
-    top: 5px;
-    right: 60px;
-    font-size: 50px;
-    cursor: pointer;
-}
-
-.bi:hover,
-.bi-star:hover {
-    color: rgb(29, 185, 84, 0.5)
-}
-
-/* Estilos de la canción sonando */
 aside {
-    width: 20%;
     display: flex;
     flex-direction: column;
-    margin-top: auto;
-    margin-left: 7px;
+    width: 100%;
+    height: fit-content;
+    margin-top: 5px;
 } 
 
 .song__section {
-    width: 100%;
+    width: 100%; 
     align-items: center;
     text-align: center;
-    justify-content: center;  
-    margin-bottom: 70px;
+    justify-content: center;
 } 
 
 .song__article {
-    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     width: 100%;
-}
+    text-align: center;
+} 
 
 .song__image {
     width: 100%;
@@ -224,45 +169,98 @@ aside {
 }
 
 .song__description {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 400;
     color: #ffffff;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    height: fit-content;
+}
+
+/* Estilos de las canciones */
+.songs__section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    height: 30rem;
+    padding: 10px;
+    margin: auto;
+    overflow-y: auto;
+}
+
+.songs__article {
+    display: flex;
+    width: 33%;
+    padding: 5px;
+    position: relative;
+}
+
+.songs__link {
+    width: 100%;
+}
+
+.songs__image {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border: 1px solid #1DB954;
+    display: block;
+}
+
+/* Porcentajes, responsive, usar em, también con responsive */
+.songs__star {
+    width: 10%;
+    left: 87%;
+    top: 5%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.songs__star:hover {
+    opacity: 0.8;
 }
 
 /* Estilo del audio */
 .audio__section {
     display: flex;
-    width: 74.3%;
-    margin-left: auto;
-    margin-right: 78px;
-    margin-bottom: 30px;
+    width: 100%;
+    margin: auto;
+    padding: 15px;
 }
 
 .audio__article {
+    display: flex;
     text-align: center;
+    justify-content: center;
     width: 100%;
     background-color: #1DB954;
-    border-radius: 5px;
-    padding: 10px 5px 10px 5px;
-    /* margin-left: auto; */
+    border-radius: 10px;
+    padding: 15px 5px 15px 5px;
 }
 
 .audio {
-    width: 100%;
-    margin-top: 8px;
+    width: 98%;
 }
 
 /* Estilos del footer */
 footer {
+    display: block;
     width: 100%;
+    height: max-content;
     background-color: #000000;
     color: #ffffff;
     padding: 10px;
     text-align: center;
     font-weight: 400;
-    margin: auto;
-    margin-bottom: 5px;
-    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 75px;
     border: 2px solid #1DB954;
     border-radius: 3px;
 }
