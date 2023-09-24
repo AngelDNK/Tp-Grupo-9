@@ -154,16 +154,23 @@ header {
     border: 1px solid #1DB954;
     caret-color: #1DB954;
     padding: 0px 50px;
+    position: relative;
+
     
+}
+
+.search__bar::placeholder {
+margin-left: 3px;
 }
 
 
 .bi-search {
     position: absolute;
-    top: 30px;
-    left: 400px;
+    top: 3.8%;
+    left: 22.5%;
     font-size: 30px;
     color: #1DB954;
+    
 }
    
 
