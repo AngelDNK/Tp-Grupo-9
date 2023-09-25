@@ -9,25 +9,22 @@
     </head>
     <body>
         <header>
-            <nav>
-                <a class="Logo" href="index.html"
-                    ><img src="./img/Logo.png" alt="Logo" width="70px"
-                /></a>
-
-                <h1 class="Titulos--Principales Titulos--Principales__premium">
-                    Planes Premium
-                </h1>
-                <ul class="Perfil">
-                    <li>
-                        <h3>Nombre de Usuario</h3>
-                    </li>
-                    <li>
-                        <a class="Cerrar-Sesion" href="index.html"
-                            >Cerrar Sesi&oacute;n</a
-                        >
-                    </li>
-                </ul>
-            </nav>
+            <div class="header__title">
+                <h1>Premium</h1>
+            </div>
+            <div class="profile">
+                <div class="profile__info">
+                    <h3 class="profile__title">Nombre de usuario</h3>
+                    <a href="" class="profile__link-session">Cerrar sesión</a>
+                </div>
+                <a class="profile__link" href="index.html">
+                    <img
+                        src="./img/Avatar.png"
+                        alt="Avatar"
+                        class="profile__image"
+                    />
+                </a>
+            </div>
         </header>
         <main class="premium-main">
             <section class="premium-cards-container">
@@ -161,7 +158,7 @@
                             class="premium-card-button premium-card-button__cancelar"
                             type="text"
                         >
-                            CANCELAR
+                            ← CANCELAR
                         </button>
                     </a>
                 </div>
@@ -171,7 +168,7 @@
                             class="premium-card-button premium-card-button__avanzar"
                             type="text"
                         >
-                            AVANZAR
+                            AVANZAR →
                         </button>
                     </a>
                 </div>

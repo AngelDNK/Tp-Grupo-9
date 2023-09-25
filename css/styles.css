@@ -9,10 +9,55 @@ body {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    margin-left: auto;
+    height: fit-content;
+}
+
+.header__title {
+    display: flex;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.header__title h1 {
+    text-transform: uppercase;
+}
+
+.profile {
+    display: flex;
+}
+
+.profile__info {
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.profile__link-session {
+    color: #1db954;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+.profile__link-session:hover {
+    color: #ffffff;
+}
+
+.profile__image {
+    width: 70px;
+    height: 70px;
+    margin-right: 5px;
+}
+
 .premium-main {
     display: block;
     position: relative;
-    top: 120px;
+    top: 50px;
 }
 
 label {
@@ -218,9 +263,9 @@ footer {
 
 .premium-cards-container {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
-    width: max-content;
+    width: 70vw;
     height: max-content;
     margin: 0 auto;
     gap: 20px;
@@ -295,11 +340,11 @@ footer {
 
 .premium-card-button-container {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     width: 75vw;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 30px;
     gap: 50px;
 }
 
@@ -343,4 +388,31 @@ footer {
 
 .premium-card-itemList__item {
     margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .premium-card-button-container {
+        margin-bottom: 200px;
+        gap: 20px;
+    }
+
+    .premium-card {
+        padding: 10px;
+        min-width: 200px;
+        width: 300px;
+        height: 450px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+        box-shadow: rgba(255, 255, 255, 0.274) 0px 0px 200px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .premium-card-button-container {
+        margin-bottom: 200px;
+        gap: 20px;
+    }
 }
