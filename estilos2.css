@@ -1,44 +1,43 @@
 /* RESPONSIVE TABLET */
-@media (max-width: 780px){
-     /* HEADER */
-     header .header__title h1{
+@media (max-width: 780px) {
+    /* HEADER */
+    header .header__title h1 {
         display: flex;
         font-size: small;
         width: 10%;
         top: 0;
-     }
+    }
 
-     /* MAIN */
-     .container{
+    /* MAIN */
+    .container {
         font-size: small;
         display: flex;
         justify-content: right;
         align-items: right;
         width: 40%;
         margin-right: auto;
-     }
+    }
 
-     .audio__section{
+    .audio__section {
         display: flex;
         justify-content: center;
         align-items: center;
-     }
+    }
 
-     /* FOOTER IGUAL */
-     /* NAV IGUAL */
+    /* FOOTER IGUAL */
+    /* NAV IGUAL */
 }
 
 /* Estilos generales */
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
 }
 
 body {
     background-color: rgb(0, 0, 0);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     display: flex;
     flex-wrap: wrap;
     width: fit-content;
@@ -46,7 +45,7 @@ body {
     scroll-behavior: smooth;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -115,7 +114,7 @@ header {
 }
 
 .profile__link-session {
-    color: #1DB954;
+    color: #1db954;
     text-decoration: underline;
     font-size: 15px;
 }
@@ -153,7 +152,7 @@ nav {
     width: 100%;
     margin-top: 2px;
     margin-bottom: 2px;
-    border: 1px solid #1DB954;
+    border: 1px solid #1db954;
     border-radius: 5px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -161,11 +160,11 @@ nav {
 }
 
 .Menu li:hover {
-    background-color: #1DB954;
+    background-color: #1db954;
     color: #000000;
 }
 
-.Menu li:hover a{
+.Menu li:hover a {
     color: #000000;
 }
 
@@ -180,14 +179,14 @@ aside {
     width: 100%;
     height: fit-content;
     margin-top: 5px;
-} 
+}
 
 .song__section {
-    width: 100%; 
+    width: 100%;
     align-items: center;
     text-align: center;
     justify-content: center;
-} 
+}
 
 .song__article {
     display: flex;
@@ -195,12 +194,12 @@ aside {
     flex-wrap: wrap;
     width: 100%;
     text-align: center;
-} 
+}
 
 .song__image {
     width: 100%;
     height: 100%;
-    border: 1px solid #1DB954;
+    border: 1px solid #1db954;
     border-radius: 3px;
     margin-bottom: 5px;
 }
@@ -239,7 +238,7 @@ aside {
     width: 100%;
     height: 100%;
     padding: 5px;
-    border: 1px solid #1DB954;
+    border: 1px solid #1db954;
     display: block;
 }
 
@@ -249,7 +248,7 @@ aside {
     left: 81%;
     top: 5%;
     position: absolute;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .songs__star:hover {
@@ -269,7 +268,7 @@ aside {
     text-align: center;
     justify-content: center;
     width: 99%;
-    background-color: #1DB954;
+    background-color: #1db954;
     border-radius: 10px;
     padding: 15px 5px 15px 5px;
 }
@@ -291,11 +290,11 @@ footer {
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 75px;
-    border: 2px solid #1DB954;
+    border: 2px solid #1db954;
     border-radius: 3px;
 }
 
-main{
+main {
     width: 100%;
     background-color: black;
     position: relative;
@@ -309,10 +308,9 @@ main{
     margin-top: 27px;
     border-radius: 3px;
     height: fit-content;
-
 }
 
-.contenedor-canciones{
+.contenedor-canciones {
     display: grid;
     flex-wrap: wrap;
     grid-gap: 2px;
@@ -321,7 +319,7 @@ main{
     width: 100%;
     height: 30rem;
     position: relative;
-    border: 2px solid #1DB954;
+    border: 2px solid #1db954;
     overflow: auto;
     float: auto;
     border-radius: 3px;
@@ -332,19 +330,16 @@ main{
     margin-right: auto;
     margin-left: 15px;
     justify-content: space-between;
-    
-    
 }
 
-.cld01{
+.cld01 {
     background-color: ghostwhite;
     padding: 5px;
-    
 }
 
-.cld02{
+.cld02 {
     display: flex;
-    background-color: #1DB954;
+    background-color: #1db954;
     padding: 5px;
     justify-content: center;
     align-items: center;
@@ -352,9 +347,9 @@ main{
     font-size: larger;
 }
 
-.cld03{
+.cld03 {
     display: flex;
-    background-color: #1DB954;
+    background-color: #1db954;
     padding: 5px;
     justify-content: center;
     align-items: center;
@@ -362,9 +357,9 @@ main{
     font-size: larger;
 }
 
-.cld04{
+.cld04 {
     display: flex;
-    background-color: #1DB954;
+    background-color: #1db954;
     padding: 5px;
     justify-content: center;
     align-items: center;
@@ -372,18 +367,17 @@ main{
     font-size: larger;
 }
 
-.cld05{
+.cld05 {
     display: flex;
-    background-color: #1DB954;
+    background-color: #1db954;
     padding: 5px;
     justify-content: center;
     align-items: center;
     font-weight: 800;
     font-size: larger;
-    
 }
 
-.cld06{
+.cld06 {
     background-color: black;
     padding: 5px;
     display: flex;
@@ -391,8 +385,8 @@ main{
     align-items: center;
 }
 
-.cld07{
-    background-color:black;
+.cld07 {
+    background-color: black;
     padding: 1px;
     display: flex;
     justify-content: center;
@@ -400,8 +394,8 @@ main{
     position: relative;
 }
 
-.cld08{
-    background-color:black;
+.cld08 {
+    background-color: black;
     padding: 1px;
     display: flex;
     justify-content: center;
@@ -409,32 +403,32 @@ main{
     position: relative;
 }
 
-.cld09{
+.cld09 {
     background-color: black;
     padding: 11px;
     font-weight: 800;
-    font-size:larger;
+    font-size: larger;
     color: #ffffff;
 }
 
-.cld10{
+.cld10 {
     background-color: black;
     padding: 11px;
     font-weight: 800;
-    font-size:larger;
+    font-size: larger;
     color: #ffffff;
 }
 
-.cld11{
-    background-color:black;
+.cld11 {
+    background-color: black;
     padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.cld12{
-    background-color:black;
+.cld12 {
+    background-color: black;
     padding: 1px;
     display: flex;
     justify-content: center;
@@ -442,8 +436,8 @@ main{
     position: relative;
 }
 
-.cld13{
-    background-color:black;
+.cld13 {
+    background-color: black;
     padding: 1px;
     display: flex;
     justify-content: center;
@@ -451,32 +445,32 @@ main{
     position: relative;
 }
 
-.cld14{
-    background-color:black;
+.cld14 {
+    background-color: black;
     padding: 11px;
     font-weight: 800;
-    font-size:larger;
+    font-size: larger;
     color: #ffffff;
 }
 
-.cld15{
-    background-color:black;
+.cld15 {
+    background-color: black;
     padding: 11px;
     font-weight: 800;
-    font-size:larger;
+    font-size: larger;
     color: #ffffff;
 }
 
-.cld16{
-    background-color:black;
+.cld16 {
+    background-color: black;
     padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.cld17{
-    background-color:black;
+.cld17 {
+    background-color: black;
     padding: 1px;
     display: flex;
     justify-content: center;
@@ -484,8 +478,8 @@ main{
     position: relative;
 }
 
-.cld18{
-    background-color:black;
+.cld18 {
+    background-color: black;
     padding: 1px;
     display: flex;
     justify-content: center;
@@ -493,32 +487,32 @@ main{
     position: relative;
 }
 
-.cld19{
-    background-color:black;
+.cld19 {
+    background-color: black;
     padding: 11px;
     font-weight: 800;
-    font-size:larger;
+    font-size: larger;
     color: #ffffff;
 }
 
-.cld20{
-    background-color:black;
+.cld20 {
+    background-color: black;
     padding: 11px;
     font-weight: 800;
-    font-size:larger;
+    font-size: larger;
     color: #ffffff;
 }
 
-.cld21{
-    background-color:black;
+.cld21 {
+    background-color: black;
     padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.cld22{
-    background-color:black;
+.cld22 {
+    background-color: black;
     padding: 1px;
     display: flex;
     justify-content: center;
@@ -526,8 +520,8 @@ main{
     position: relative;
 }
 
-.cld23{
-    background-color:black;
+.cld23 {
+    background-color: black;
     padding: 1px;
     display: flex;
     justify-content: center;
@@ -535,32 +529,32 @@ main{
     position: relative;
 }
 
-.cld24{
-    background-color:black;
+.cld24 {
+    background-color: black;
     padding: 11px;
     font-weight: 800;
-    font-size:larger;
+    font-size: larger;
     color: #ffffff;
 }
 
-.cld25{
-    background-color:black;
+.cld25 {
+    background-color: black;
     padding: 11px;
     font-weight: 800;
-    font-size:larger;
+    font-size: larger;
     color: #ffffff;
 }
 
-.cld26{
-    background-color:black;
+.cld26 {
+    background-color: black;
     padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.cld27{
-    background-color:black;
+.cld27 {
+    background-color: black;
     padding: 1px;
     display: flex;
     justify-content: center;
@@ -568,8 +562,8 @@ main{
     position: relative;
 }
 
-.cld28{
-    background-color:black;
+.cld28 {
+    background-color: black;
     padding: 1px;
     display: flex;
     justify-content: center;
@@ -577,32 +571,32 @@ main{
     position: relative;
 }
 
-.cld29{
-    background-color:black;
+.cld29 {
+    background-color: black;
     padding: 11px;
     font-weight: 800;
-    font-size:larger;
+    font-size: larger;
     color: #ffffff;
 }
 
-.cld30{
-    background-color:black;
+.cld30 {
+    background-color: black;
     padding: 11px;
     font-weight: 800;
-    font-size:larger;
+    font-size: larger;
     color: #ffffff;
 }
 
-.cld31{
-    background-color:black;
+.cld31 {
+    background-color: black;
     padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.cld32{
-    background-color:black;
+.cld32 {
+    background-color: black;
     padding: 1px;
     display: flex;
     justify-content: center;
@@ -610,8 +604,8 @@ main{
     position: relative;
 }
 
-.cld33{
-    background-color:black;
+.cld33 {
+    background-color: black;
     padding: 1px;
     display: flex;
     justify-content: center;
@@ -619,18 +613,18 @@ main{
     position: relative;
 }
 
-.cld34{
-    background-color:black;
+.cld34 {
+    background-color: black;
     padding: 11px;
     font-weight: 800;
-    font-size:larger;
+    font-size: larger;
     color: #ffffff;
 }
 
-.cld35{
-    background-color:black;
+.cld35 {
+    background-color: black;
     padding: 11px;
     font-weight: 800;
-    font-size:larger;
+    font-size: larger;
     color: #ffffff;
 }
