@@ -28,7 +28,7 @@ label {
     color: rgb(255, 255, 255);
 }
 
-/* Estilos del header y del nav */
+/* Estilos de los containers */
 .container {
     display: flex;
     width: 80%;
@@ -49,6 +49,7 @@ label {
     margin-left: 10px;
 }
 
+/* Header */
 header {
     width: 100%;
     display: flex;
@@ -95,6 +96,7 @@ header {
     margin-right: 5px;
 }
 
+/* Nav */
 nav {
     display: flex;
     flex-direction: column;
@@ -105,7 +107,7 @@ nav {
     text-align: center;
 }
 
-.Menu {
+.menu {
     width: 100%;
     list-style-type: none;
     display: flex;
@@ -113,7 +115,7 @@ nav {
     align-items: center;
 }
 
-.Menu li {
+.menu li {
     width: 100%;
     margin-top: 2px;
     margin-bottom: 2px;
@@ -124,20 +126,21 @@ nav {
     cursor: pointer;
 }
 
-.Menu li:hover {
+.menu li:hover {
     background-color: #1DB954;
     color: #000000;
 }
 
-.Menu li:hover a{
+.menu li:hover a{
     color: #000000;
 }
 
-.Menu li a {
+.menu li a {
     width: 100%;
     color: #ffffff;
 }
 
+/* Aside */
 aside {
     display: flex;
     flex-direction: column;
@@ -170,11 +173,13 @@ aside {
 }
 
 .song__description {
+    align-self: flex-start;
     font-size: 10px;
     font-weight: 400;
     color: #ffffff;
 }
 
+/* Main */
 main {
     display: flex;
     width: 100%;
@@ -232,6 +237,7 @@ main {
     display: flex;
     width: 100%;
     margin: auto;
+    margin-top: 15px;
     padding: 15px;
 }
 
@@ -242,7 +248,7 @@ main {
     width: 99%;
     background-color: #1DB954;
     border-radius: 10px;
-    padding: 15px 5px 15px 5px;
+    padding: 20px 5px 20px 5px;
 }
 
 .audio {
@@ -252,16 +258,16 @@ main {
 /* Estilos del footer */
 footer {
     display: block;
-    width: 100%;
+    position: fixed;
+    bottom: 0;
+    width: 99%;
     height: max-content;
     background-color: #000000;
     color: #ffffff;
     padding: 10px;
     text-align: center;
     font-weight: 400;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 75px;
+    margin: 0px 10px 10px 10px;
     border: 2px solid #1DB954;
     border-radius: 3px;
 }
