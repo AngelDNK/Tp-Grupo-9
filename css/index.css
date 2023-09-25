@@ -162,6 +162,7 @@ aside {
     flex-wrap: wrap;
     width: 100%;
     text-align: center;
+    position: relative;
 } 
 
 .song__image {
@@ -220,7 +221,8 @@ main {
 }
 
 /* Porcentajes, responsive, usar em, también con responsive */
-.songs__star {
+.songs__star,
+.song__star {
     width: 10%;
     left: 85%;
     top: 5%;
@@ -228,7 +230,8 @@ main {
     cursor: pointer; 
 }
 
-.songs__star:hover {
+.songs__star:hover,
+.song__star:hover {
     opacity: 0.8;
 }
 
