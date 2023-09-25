@@ -160,6 +160,12 @@ a {
     }
 }
 
+@media only screen and (max-width: 621px) {
+    .profile__info {
+        display: block;
+    }
+}
+
 @media only screen and (max-width: 499px) {
     .form__button-group {
         gap: 10px;
