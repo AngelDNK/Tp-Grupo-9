@@ -67,7 +67,7 @@ a {
 .form__label {
     font-size: 16px;
     width: 10%;
-
+    margin-right: 20px;
 }
 
 .form__input {
@@ -131,4 +131,50 @@ a {
 
 .footer {
     margin-top: 5px;
+}
+
+@media only screen and (max-width: 777px) {
+    .footer {
+        display: none;
+    }
+
+    .form__group {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .form__label {
+        width: 100%;
+        margin: 0;
+        padding: 2px;
+    }
+
+    .form__input {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .form__input-button {
+        text-wrap: nowrap;
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    .form__button-group {
+        gap: 10px;
+    }
+    
+    .form__input-button {
+        width: 100%;
+    }
+
+    .form__division {
+        margin-bottom: 10px;
+    }
+
+    .form__link {
+        padding: 5%;
+        margin-bottom: 10px;
+    }
 }
