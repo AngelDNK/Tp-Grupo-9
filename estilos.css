@@ -1,16 +1,12 @@
-@media (max-width: 600px){
-    .navegador .usuario .contenedor-canciones .footer{
-        display: none;
-        width: 100%;
-        min-width: none;
-    }
-
-    .contenedor-canciones{
-        max-width: none;
-        width: 100%;
-        margin: 0;
-        padding: 20px 20px;
-    }
+/* RESPONSIVE TABLET */
+@media (max-width: 768px){
+     /* HEADER */
+     header .header__title h1{
+        display: flex;
+        font-size: small;
+        width: 20%;
+        top: auto;
+     }
 }
 
 /* Estilos generales */
@@ -67,11 +63,14 @@ label {
 header {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     padding: 10px;
     color: #ffffff;
     margin-left: auto;
+    margin-right: 10px;
     height: fit-content;
+    justify-content: right;
+    align-items: right;
 }
 
 .header__title {
@@ -86,6 +85,9 @@ header {
 
 .profile {
     display: flex;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: left;
 }
 
 .profile__info {
@@ -329,7 +331,7 @@ main{
     justify-content: center;
     align-items: center;
     font-weight: 800;
-    font-size: large;
+    font-size: larger;
 }
 
 .cld03{
@@ -339,7 +341,7 @@ main{
     justify-content: center;
     align-items: center;
     font-weight: 800;
-    font-size: large;
+    font-size: larger;
 }
 
 .cld04{
@@ -349,7 +351,7 @@ main{
     justify-content: center;
     align-items: center;
     font-weight: 800;
-    font-size: large;
+    font-size: larger;
 }
 
 .cld05{
@@ -359,7 +361,7 @@ main{
     justify-content: center;
     align-items: center;
     font-weight: 800;
-    font-size: large;
+    font-size: larger;
     
 }
 
