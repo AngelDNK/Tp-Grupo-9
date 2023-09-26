@@ -267,3 +267,9 @@ footer {
     border: 2px solid #1DB954;
     border-radius: 3px;
 }
+
+@media screen and(min-width:800px) {
+    header{
+       background-color: aqua;
+    }
+}

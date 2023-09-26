@@ -37,6 +37,7 @@ label {
     flex-wrap: wrap;
     text-align: center;
     margin-bottom: auto;
+    
 }
 
 .column__container {
@@ -57,6 +58,7 @@ header {
     color: #ffffff;
     margin-left: auto;
     height: fit-content;
+    
 }
 
 .header__title {
@@ -297,4 +299,11 @@ footer {
     top: 13%;
    
     
+}
+
+
+@media screen and(max-width:800px) {
+    header{
+       background-color: aqua;
+    }
 }
