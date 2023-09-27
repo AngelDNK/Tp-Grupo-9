@@ -25,7 +25,7 @@ header {
 .header__title {
     display: flex;
     margin: auto;
-    text-align: center;
+    text-align: start;
     justify-content: center;
     align-items: center;
 

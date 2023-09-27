@@ -64,6 +64,7 @@ header {
     display: flex;
     margin-right: auto;
     margin-top: 10px;
+    text-align: start;
 }
 
 .header__title h1 {
@@ -72,6 +73,8 @@ header {
 
 .profile {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .profile__info {
@@ -318,6 +321,11 @@ footer {
 }
 
 @media only screen and (max-width: 820px) {
+
+    body {
+        width: auto;
+    }
+
     .container {
         width: 63%;
     }
@@ -373,7 +381,7 @@ footer {
     }
 
     .songs__star {
-        width: 30%;
+        width: 20%;
         left: 75%;
     }
 
@@ -397,6 +405,4 @@ footer {
         width: 20%;
         left: 70%;
     }
-
-    
 }
