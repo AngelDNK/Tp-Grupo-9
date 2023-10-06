@@ -13,7 +13,6 @@ input {
     border-radius: 10px;
     height: 50%;
     padding-left: 30px;
-    padding-right: 30px;
     position: relative;
 }
 
@@ -79,25 +78,25 @@ input {
 }
 
 @media only screen and (max-width: 820px) {
-    .container {
+    /* .container {
         width: 63%;
     }
 
     .column__container {
         width: 35%;
-    }
+    } */
 
-    .songs__section {
+    /* .songs__section {
         height: 50vh;
     }
 
     .songs__article {
         width: 100%;
-    }
+    } */
 
     .profile__info h3 {
         display: none;
-    }
+    } 
 
     .search__section{
         width: 60%;
@@ -105,8 +104,15 @@ input {
     }
 
     .search__image {
-        width: 8%;
-        left: 3%;
+        width: 7%;
+        left: 4%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        margin: auto;
+        margin-top: 70px;
     }
 }
 
@@ -151,11 +157,11 @@ input {
     .search__image {
         width: 14%;
         left: 4%;
+        justify-content: center;
+        align-items: center;
+      
     }
 
-    footer {
-        display: none;
-    }
 }
 
 
@@ -165,17 +171,43 @@ input {
         width: 65%;
     }
 
+    .profile__image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .profile__link-session {
+        font-size: 10px;
+    }
+
     .header__title h1{
         display: none;
     }
 
     .search__section{
-        margin: 0px 10px;
-        width: 60%;
-        
+        margin: auto;
+        width: 100%;
+        background-color: aqua;
+        padding: 0;
     }
 
-    .search__section {
-   margin: auto;
-}
+    .search__input {
+        width: 100%;
+        padding-left: 25px;
+    }
+
+    .search__input::placeholder {
+        display: none;
+        font-size: 12px;
+        color: transparent;
+    }
+    
+    .search__image{
+        width: 17px;
+        height: 17px;
+        justify-content: center;
+        align-items: center;
+        top: 10px;
+    }
+
 }
