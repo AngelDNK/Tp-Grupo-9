@@ -1,14 +1,13 @@
 /* Estilos generales */
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
 }
 
 body {
     background-color: rgb(0, 0, 0);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     display: flex;
     flex-wrap: wrap;
     width: fit-content;
@@ -16,7 +15,7 @@ body {
     scroll-behavior: smooth;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -84,7 +83,7 @@ header {
 }
 
 .profile__link-session {
-    color: #1DB954;
+    color: #1db954;
     text-decoration: underline;
     font-size: 15px;
 }
@@ -122,7 +121,7 @@ nav {
     width: 100%;
     margin-top: 2px;
     margin-bottom: 2px;
-    border: 1px solid #1DB954;
+    border: 1px solid #1db954;
     border-radius: 5px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -130,16 +129,16 @@ nav {
 }
 
 .menu li:hover {
-    background-color: #1DB954;
+    background-color: #1db954;
     color: #000000;
 }
 
 .active {
-    background-color: #1DB954;
+    background-color: #1db954;
     color: #000000;
 }
 
-.menu li:hover a{
+.menu li:hover a {
     color: #000000;
 }
 
@@ -156,14 +155,14 @@ aside {
     width: 100%;
     height: fit-content;
     margin-top: 5px;
-} 
+}
 
 .song__section {
-    width: 100%; 
+    width: 100%;
     align-items: center;
     text-align: center;
     justify-content: center;
-} 
+}
 
 .song__article {
     display: flex;
@@ -172,12 +171,12 @@ aside {
     width: 100%;
     text-align: center;
     position: relative;
-} 
+}
 
 .song__image {
     width: 100%;
     height: 100%;
-    border: 1px solid #1DB954;
+    border: 1px solid #1db954;
     border-radius: 3px;
     margin-bottom: 5px;
 }
@@ -225,7 +224,7 @@ main {
     width: 100%;
     height: 100%;
     padding: 5px;
-    border: 1px solid #1DB954;
+    border: 1px solid #1db954;
     display: block;
 }
 
@@ -236,7 +235,7 @@ main {
     left: 85%;
     top: 5%;
     position: absolute;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .songs__star:hover,
@@ -258,7 +257,7 @@ main {
     text-align: center;
     justify-content: center;
     width: 99%;
-    background-color: #1DB954;
+    background-color: #1db954;
     border-radius: 10px;
     padding: 20px 5px 20px 5px;
 }
@@ -279,7 +278,7 @@ footer {
     margin: 0px 10px 10px 10px;
     margin-top: 130px;
     bottom: 0;
-    border: 2px solid #1DB954;
+    border: 2px solid #1db954;
     border-radius: 3px;
 }
 
@@ -365,11 +364,11 @@ footer {
     .header__title {
         margin: auto;
     }
-    
+
     .header__title h1 {
         font-size: 25px;
     }
-    
+
     .profile__info {
         margin: auto;
         margin-right: 15px;
@@ -388,14 +387,12 @@ footer {
     }
 }
 
-
-
 @media only screen and (max-width: 540px) {
     .container {
         width: 65%;
     }
 
-    .header__title h1{
+    .header__title h1 {
         display: none;
     }
 
@@ -405,12 +402,7 @@ footer {
         top: 7%;
     }
 
-    .song__article{
-        .songs__star{
-            width: 17%;
-            left: 80%;
-            top: 2%;
-        }
+    .song__article {
     }
 
     footer {
