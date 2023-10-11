@@ -276,11 +276,12 @@ footer {
     }
     
     .songs__container {
-        font-size: 7px;
+        font-size: 9px;
         justify-content: space-between;
         overflow-x: scroll;
         margin-left: 0;
-        grid-template-columns: 13% repeat(4, 25%);
+        grid-template-columns: 13% repeat(4, 16%);
+        /* grid-column-gap: 0; */
     }
 
     .songs__button-img {
