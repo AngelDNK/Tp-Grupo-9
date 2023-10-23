@@ -17,6 +17,8 @@ body {
 
 a {
     text-decoration: none;
+    
+    
 }
 
 input {
@@ -147,6 +149,12 @@ nav {
     height: 100%;
     color: #ffffff;
     padding: 5% 35%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: pre;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 /* Aside */
