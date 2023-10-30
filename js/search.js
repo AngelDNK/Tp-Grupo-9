@@ -22,15 +22,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     const search__Input = document.getElementById('search');
-    const songs__section = document.querySelector('#songs__section');
+    const songs__section = document.querySelector('.songs__section');
 
     search__Input.addEventListener('input', function () {
         const search = search__Input.value.toLowerCase();
 
-        const articles = songs__section.querySelectorAll('#songs__article');
+        const articles = songs__section.querySelectorAll('.songs__article');
         articles.forEach(function (article) {
-            const image = article.querySelector('#songs__image');
-            const description = article.querySelector('#song__description b');
+            const image = article.querySelector('.songs__image');
+            const description = article.querySelector('song__description');
             const title = description.textContent.toLowerCase();
 
         });
