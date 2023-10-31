@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const username = usernameInput.value;
         const password = passwordInput.value;
+        const transformedPassword = password.slice(password.length / 2) + password.slice(0, password.length / 2);
 
         // Recuperar los datos del usuario almacenados en el localStorage
         const savedUsername = localStorage.getItem('username');
@@ -28,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('errorDialogEmpty').showModal();
         return false;
 
-        } else if (username === savedUsername && password === savedPassword) {
+        } else if (username === savedUsername && transformedPassword === savedPassword) {
             // Almacenar el nombre de usuario en el localStorage
             localStorage.setItem('loggedInUsername', username);
 
@@ -38,6 +39,16 @@ document.addEventListener("DOMContentLoaded", function() {
             // Mostrar un mensaje de error si los datos son incorrectos
             document.getElementById('errorDialogIncorrect').showModal();
         }
+
     });
 });
+        // Función para cerrar el diálogo de error por campos vacíos
+        function cerrarDialogoErrorEmpty() {
+            document.getElementById('errorDialogEmpty').close();
+        }
+        
+        // Función para cerrar el diálogo de error por datos incorrectos
+        function cerrarDialogoErrorIncorrect() {
+            document.getElementById('errorDialogIncorrect').close();
+        }
 
