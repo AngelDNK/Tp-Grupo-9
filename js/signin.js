@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
             localStorage.setItem('loggedInUsername', username);
 
             // Redirigir a la página de inicio de sesión exitosa
-            window.location.href = './views/home.html';
+            window.location.href = 'home.html';
         } else {
             // Mostrar un mensaje de error si los datos son incorrectos
             document.getElementById('errorDialogIncorrect').showModal();

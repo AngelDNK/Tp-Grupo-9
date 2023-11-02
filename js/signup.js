@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const username = usernameInput.value;
         const password = passwordInput.value;
         const passwordRepeat = passwordRepeatInput.value;
+        const email = emailInput.value;
+        const birth_Date = birthDateInput.value;
 
         if (username === '' || password === '' || passwordRepeat ==='' ){
         document.getElementById('errorDialogEmpty').showModal();
@@ -25,6 +27,8 @@ document.addEventListener("DOMContentLoaded", function() {
             // Guardar los datos del usuario en el localStorage
             localStorage.setItem('username', username);
             localStorage.setItem('password', transformedPassword);
+            localStorage.setItem('email', email);
+            localStorage.setItem('birth-date', birth_Date);
 
             // Redirigir a la página de inicio de sesión
             window.location.href = '../index.html';
