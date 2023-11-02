@@ -67,12 +67,12 @@ songsArticles.forEach((article) => {
 
 
 // Al hacer click se actualiza la imagen de la cancion sonando y el texto
-const cancion1 = document.querySelector(".songs__image #song__first");
-const cancion2 = document.querySelector(".songs__image #song__second");
-const cancion3 = document.querySelector(".songs__image #song__third");
-const cancion4 = document.querySelector(".songs__image #song__fourth");
-const cancion5 = document.querySelector(".songs__image #song__fifth");
-const cancion6 = document.querySelector(".songs__image #song__sixth");
+const cancion1 = document.querySelector("#song__first");
+const cancion2 = document.querySelector("#song__second");
+const cancion3 = document.querySelector("#song__third");
+const cancion4 = document.querySelector("#song__fourth");
+const cancion5 = document.querySelector("#song__fifth");
+const cancion6 = document.querySelector("#song__sixth");
 const songAside = document.querySelector(".song__image");
 const texto = document.querySelector(".song__description");
 
