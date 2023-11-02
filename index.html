@@ -20,6 +20,7 @@
                 placeholder="Usuario" 
                 id="username"
                 class="form__input"
+                required
             >
             <label for="password" class="form__label">Contraseña</label>
             <input 
@@ -27,11 +28,16 @@
                 placeholder="Contraseña"
                 id="password"
                 class="form__input"
+                required
             >
             <button type="submit" class="form__input-button">Iniciar sesión</button>
             <a href="./views/signup.html" class="form__link">Registrarme</a>
         </form>
     </div>
+    <dialog id="errorDialogIncorrect" class="dialogSignIn">
+        <p class="dialogTextIncorrect">Has ingresado datos de forma incorrecta.</p>
+        <button class="buttonDialog" onclick="cerrarDialogoErrorIncorrect()">Cerrar</button>
+    </dialog>
     <footer class="footer">
         <p>
             Octavio Sancho | 39.510.073 - Tobias Rodriguez | 44.513.673 - Angel Leyes| 42.199.664
