@@ -147,6 +147,12 @@ nav {
     height: 100%;
     color: #ffffff;
     padding: 5% 35%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: pre;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 /* Aside */
@@ -201,7 +207,7 @@ main {
 .songs__section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between; 
     text-align: center;
     width: 100%;
     height: 30rem;
@@ -237,11 +243,15 @@ main {
     top: 5%;
     position: absolute;
     cursor: pointer;
+    /* filter: hue-rotate(20deg); //amarillo
+    filter:grayscale(100%); */
+    
 }
 
 .songs__star:hover,
 .song__star:hover {
     opacity: 0.8;
+    
 }
 
 /* Estilo del audio */

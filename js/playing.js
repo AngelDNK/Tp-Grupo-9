@@ -41,6 +41,7 @@ const favoritos = cargarAlbumsFavoritos();
 songsArticles.forEach((article) => {
     // Encontrar la estrella dentro de este artículo
     const star = article.querySelector(".songs__star");
+    
 
     // Obtener el nombre del álbum
     const albumName = article.querySelector(".songs__image").getAttribute("src");
@@ -54,6 +55,7 @@ songsArticles.forEach((article) => {
             if (indexToRemove !== -1) {
                 favoritos.splice(indexToRemove, 1);
                 guardarAlbumsFavoritos(favoritos);
+                
             }
             star.classList.remove("selected");
         } else {
@@ -61,7 +63,9 @@ songsArticles.forEach((article) => {
             favoritos.push(albumName);
             guardarAlbumsFavoritos(favoritos);
             star.classList.add("selected");
-        }
+            
+
+        };
     });
 });
 
@@ -105,3 +109,6 @@ cancion6.addEventListener("click", function() {
     songAside.src= '../img/Idontwanttomissathing cancion 6.jpg';
     texto.textContent = "La canción I Don't Want to Miss a Thing de Aerosmith es una declaración de amor y devoción, expresando admiración por alguien tan envuelto en ellos que nunca quiere separarse de su lado. La letra habla del deseo de permanecer en el momento para siempre y nunca dejar ir su amor."
 })
+
+
+// Al hacer click en las estrellas, el álbum se debe agregar/retirar como álbum favorito.
