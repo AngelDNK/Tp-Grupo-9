@@ -90,6 +90,14 @@ footer {
     margin: auto;
 }
 
+.amarilla {
+    filter: hue-rotate(60deg); /* Amarillo */
+}
+
+.azul{
+    filter: hue-rotate(700deg);
+}
+
 
 @media (max-width: 1280px) {
     header {
@@ -108,9 +116,9 @@ footer {
 /* RESPONSIVE TABLET */
 @media (max-width: 1024px) {
     /* HEADER */
-    body {
+    /* body {
         /* height: 100vh; */
-    }
+    
     header {
         display: flex;
         font-size: medium;
@@ -234,10 +242,6 @@ footer {
 
 /* RESPONSIVE MOBILE */
 @media (max-width: 650px) {
-    body {
-        
-    }
-
     .flecha__link {
         display: block;
     }
@@ -309,25 +313,21 @@ footer {
 }
 
 @media (max-width: 1024px){
-   .song__article{
+    .song__article{
     .songs__star{
         width: 25%;
         top: 7px;
         left: 70%;
     }
-   }
+    }
 
-   footer{
+    footer{
     width: 95%;
     margin-bottom: 10px;
-   }
+    }
 } 
 
 @media (max-width: 820px){
-    body{
-
-    }
-
     main{
         width: 100%;
     }

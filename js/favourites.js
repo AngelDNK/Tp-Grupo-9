@@ -54,7 +54,7 @@ songsArticles.forEach((article) => {
             if (indexToRemove !== -1) {
                 favoritos.splice(indexToRemove, 1);
                 guardarAlbumsFavoritos(favoritos);
-                
+
             }
             star.classList.remove("selected");
         } else {
@@ -62,6 +62,7 @@ songsArticles.forEach((article) => {
             favoritos.push(albumName);
             guardarAlbumsFavoritos(favoritos);
             star.classList.add("selected");
+            
         }
     });
 });
@@ -109,4 +110,51 @@ cancion6.addEventListener("click", function() {
 
 
 // Al hacer click en las estrellas, el álbum se debe agregar/retirar como álbum favorito.
-let estrellaNegra = document.getElementById
+
+// const songsArticlesStars = document.getElementById('songs__content');
+
+// songsArticlesStars.forEach((article) => {
+//     const estrella = article.getElementsById('estrella');
+//     let colorAlternado = false; // Variable para alternar el color\
+
+//     estrella.addEventListener('click', () => {
+//         if (colorAlternado) {
+//             estrella.classList.remove('azul');
+//             estrella.classList.add('amarilla');
+//         } else {
+//             estrella.classList.remove('amarilla');
+//             estrella.classList.add('azul');
+//         }
+//         colorAlternado = !colorAlternado;
+//     });
+// })
+
+
+// // agregar albumes a favoritos al hacer click en la estrella
+
+// const estrella = document.querySelectorAll(".favAlbumSonando")
+
+// estrella.forEach(function(estrella){
+//     estrella.addEventListener("click",function () {
+
+//         estrella.classList.toggle("fondo")
+
+//         for (const usuario of usuariosRegistrados) {
+
+//             if (usuario.enLinea==true) {
+//                 const album=this.alt
+//                 let albumFav=usuario.albumsFav
+//                 const contieneAlbum=albumFav.some((albumbuscado)=>albumbuscado===album)
+
+//                 if (contieneAlbum) {
+//                     const indiceAlbum=albumFav.indexOf(album)
+//                     albumFav.splice(indiceAlbum,1)
+//                 }else{
+//                     albumFav.push(album);
+//                 }
+//                 }
+//             }
+//                 localStorage.setItem("usuarios",JSON.stringify(usuariosRegistrados));
+//     })
+// })
+

@@ -243,10 +243,20 @@ main {
     top: 5%;
     position: absolute;
     cursor: pointer;
-    /* filter: hue-rotate(20deg); //amarillo
-    filter:grayscale(100%); */
     
 }
+
+/* Estilo de la estrella original */
+
+.amarilla {
+    filter: hue-rotate(700deg); /* Amarillo */
+} 
+
+
+.azul{
+    filter: hue-rotate(700deg);
+}
+
 
 .songs__star:hover,
 .song__star:hover {
@@ -424,9 +434,6 @@ footer {
         width: 17%;
         left: 75%;
         top: 7%;
-    }
-
-    .song__article {
     }
 
     footer {
