@@ -72,6 +72,8 @@ NODO_ALBUM_BUSCAR.addEventListener("keyup", e => {
             
             if (albumNombre.includes(PALABRA_A_BUSCAR)) {
                 NODO_SECTION.innerHTML += `<article><img src="${album.album.src}" alt="${album.album.alt}"></article>`;
+            }else{
+                // NODO_SECTION.innerHTML = "";
             }
         }
     });
