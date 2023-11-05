@@ -57,27 +57,32 @@ const ALBUM16 = { album: document.querySelector('#somosmagic') }
 const ALBUMES = [ALBUM1, ALBUM2, ALBUM3, ALBUM4, ALBUM5, ALBUM6, ALBUM7, ALBUM8, ALBUM9, ALBUM10, ALBUM12, ALBUM13, ALBUM14, ALBUM15, ALBUM16];
 
 const NODO_ALBUM_BUSCAR = document.querySelector('#search');
+const songsSection = document.querySelector("#songs_section");
 
-NODO_ALBUM_BUSCAR.addEventListener("keyup", e => {
+NODO_ALBUM_BUSCAR.addEventListener("input", function (e) {
+    const PALABRA_A_BUSCAR = NODO_ALBUM_BUSCAR.value.toLowerCase();
 
-    const PALABRA_A_BUSCAR = NODO_ALBUM_BUSCAR.value;
-    
-    const NODO_SECTION = document.getElementById("songs_section");
-    
-    NODO_SECTION.innerHTML = "";
+   
+    songsSection.innerHTML = "";
 
-    ALBUMES.forEach((album) => {
-        if (album && album.album) {
-            const albumNombre = album.album.id.toLowerCase();
-            
+    ALBUMES.forEach(albumObj => {
+        if (albumObj && albumObj.album) {
+            const albumNombre = albumObj.album.id.toLowerCase();
+
             if (albumNombre.includes(PALABRA_A_BUSCAR)) {
-                NODO_SECTION.innerHTML += `<article><img src="${album.album.src}" alt="${album.album.alt}"></article>`;
+                
+                const clonedAlbum = albumObj.album.closest('article').cloneNode(true);
+                const images = clonedAlbum.querySelectorAll('img');
+                images.forEach(img => {
+                    img.style.width = '450px'; 
+                    img.style.height = '450px'; 
+                });
+                songsSection.appendChild(clonedAlbum);
             }
         }
     });
 });
 
-    
 
 
     /*`<article> ${ALBUMES[0].album} </article>`
@@ -96,7 +101,3 @@ NODO_ALBUM_BUSCAR.addEventListener("keyup", e => {
                              `<article> ${ALBUMES[13].album} </article>`
                              `<article> ${ALBUMES[14].album} </article>`
                              `<article> ${ALBUMES[15].album} </article>`*/
-
-
-
-                            
