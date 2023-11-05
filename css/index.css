@@ -17,6 +17,8 @@ body {
 
 a {
     text-decoration: none;
+    
+    
 }
 
 input {
@@ -207,7 +209,7 @@ main {
 .songs__section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
+    justify-content: space-between;
     text-align: center;
     width: 100%;
     height: 30rem;
@@ -243,24 +245,17 @@ main {
     top: 5%;
     position: absolute;
     cursor: pointer;
-    
 }
-
-/* Estilo de la estrella original */
-
-.amarilla {
-    filter: hue-rotate(700deg); /* Amarillo */
-} 
-
-
-.azul{
-    filter: hue-rotate(700deg);
-}
-
 
 .songs__star:hover,
 .song__star:hover {
     opacity: 0.8;
+    filter: hue-rotate(80deg);
+}
+
+.selected {
+    opacity: 0.8;
+    filter: hue-rotate(80deg);
     
 }
 
@@ -434,6 +429,9 @@ footer {
         width: 17%;
         left: 75%;
         top: 7%;
+    }
+
+    .song__article {
     }
 
     footer {

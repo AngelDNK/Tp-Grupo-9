@@ -57,6 +57,13 @@ footer {
     justify-content: space-between;
 }
 
+.reprod__mobile {
+    display: none;
+}
+.reprod__desktop {
+    display: block;
+}
+
 .songs__white {
     background-color: ghostwhite;
     padding: 5px;
@@ -89,15 +96,6 @@ footer {
     color: #ffffff;
     margin: auto;
 }
-
-.amarilla {
-    filter: hue-rotate(60deg); /* Amarillo */
-}
-
-.azul{
-    filter: hue-rotate(700deg);
-}
-
 
 @media (max-width: 1280px) {
     header {
