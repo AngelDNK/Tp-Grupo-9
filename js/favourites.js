@@ -112,3 +112,111 @@ cancion6.addEventListener("click", function() {
     songAside.src= '../img/Idontwanttomissathing cancion 6.jpg';
     texto.textContent = "La canción I Don't Want to Miss a Thing de Aerosmith es una declaración de amor y devoción, expresando admiración por alguien tan envuelto en ellos que nunca quiere separarse de su lado. La letra habla del deseo de permanecer en el momento para siempre y nunca dejar ir su amor."
 })
+
+
+// Se debe mostrar solamente las canciones que el usuario marcó como favoritos.
+
+// ***** FILA 1 *****
+const filaOneBoton = document.querySelector('#fila1BotonPlay');
+const filaOneCancion = document.querySelector('#fila1Cancion');
+const filaOneAlbum = document.querySelector('#fila1Album');
+const filaOneDuracion = document.querySelector('#fila1Duracion');
+const filaOneReproduccion = document.querySelector('#fila1Reproducciones');
+const cambiarVistaOne = document.querySelector('#cambiarVista');
+
+cambiarVistaOne.addEventListener('click', () => {
+    filaOneBoton.style.display = 'none';
+    filaOneCancion.style.display = 'none';
+    filaOneAlbum.style.display = 'none';
+    filaOneDuracion.style.display = 'none';
+    filaOneReproduccion.style.display = 'none';
+})
+
+
+// ***** FILA 2 *****
+const cambiarVistaTwo = document.querySelector('#cambiarVista2');
+
+const filaTwoBoton = document.querySelector('#fila2BotonPlay');
+const filaTwoCancion = document.querySelector('#fila2Cancion');
+const filaTwoAlbum = document.querySelector('#fila2Album');
+const filaTwoDuracion = document.querySelector('#fila2Duracion');
+const filaTwoReproduccion = document.querySelector('#fila2Reproducciones');
+
+cambiarVistaTwo.addEventListener('click', () => {
+    filaTwoBoton.style.display = 'none';
+    filaTwoCancion.style.display = 'none';
+    filaTwoAlbum.style.display = 'none';
+    filaTwoDuracion.style.display = 'none';
+    filaTwoReproduccion.style.display = 'none';
+})
+
+
+// ***** FILA 3 *****
+const cambiarVistaThree = document.querySelector('#cambiarVista3');
+
+const filaThreeBoton = document.querySelector('#fila3BotonPlay');
+const filaThreeCancion = document.querySelector('#fila3Cancion');
+const filaThreeAlbum = document.querySelector('#fila3Album');
+const filaThreeDuracion = document.querySelector('#fila3Duracion');
+const filaThreeReproduccion = document.querySelector('#fila3Reproducciones');
+
+cambiarVistaThree.addEventListener('click', () => {
+    filaThreeBoton.style.display = 'none';
+    filaThreeCancion.style.display = 'none';
+    filaThreeAlbum.style.display = 'none';
+    filaThreeDuracion.style.display = 'none';
+    filaThreeReproduccion.style.display = 'none';
+})
+
+
+// ***** FILA 4 *****
+const cambiarVistaFour = document.querySelector('#cambiarVista4');
+
+const filaFourBoton = document.querySelector('#fila4BotonPlay');
+const filaFourCancion = document.querySelector('#fila4Cancion');
+const filaFourAlbum = document.querySelector('#fila4Album');
+const filaFourDuracion = document.querySelector('#fila4Duracion');
+const filaFourReproduccion = document.querySelector('#fila4Reproducciones');
+
+cambiarVistaFour.addEventListener('click', () => {
+    filaFourBoton.style.display = 'none';
+    filaFourCancion.style.display = 'none';
+    filaFourAlbum.style.display = 'none';
+    filaFourDuracion.style.display = 'none';
+    filaFourReproduccion.style.display = 'none';
+})
+
+// ***** FILA 5 *****
+const cambiarVistaFive = document.querySelector('#cambiarVista5');
+
+const filaFiveBoton = document.querySelector('#fila5BotonPlay');
+const filaFiveCancion = document.querySelector('#fila5Cancion');
+const filaFiveAlbum = document.querySelector('#fila5Album');
+const filaFiveDuracion = document.querySelector('#fila5Duracion');
+const filaFiveReproduccion = document.querySelector('#fila5Reproducciones');
+
+cambiarVistaFive.addEventListener('click', () => {
+    filaFiveBoton.style.display = 'none';
+    filaFiveCancion.style.display = 'none';
+    filaFiveAlbum.style.display = 'none';
+    filaFiveDuracion.style.display = 'none';
+    filaFiveReproduccion.style.display = 'none';
+})
+
+
+// ***** FILA 6 *****
+const cambiarVistaSix = document.querySelector('#cambiarVista6');
+
+const filaSixBoton = document.querySelector('#fila6BotonPlay');
+const filaSixCancion = document.querySelector('#fila6Cancion');
+const filaSixAlbum = document.querySelector('#fila6Album');
+const filaSixDuracion = document.querySelector('#fila6Duracion');
+const filaSixReproduccion = document.querySelector('#fila6Reproducciones');
+
+cambiarVistaSix.addEventListener('click', () => {
+    filaSixBoton.style.display = 'none';
+    filaSixCancion.style.display = 'none';
+    filaSixAlbum.style.display = 'none';
+    filaSixDuracion.style.display = 'none';
+    filaSixReproduccion.style.display = 'none';
+})
