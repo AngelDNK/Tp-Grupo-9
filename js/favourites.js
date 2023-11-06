@@ -116,22 +116,21 @@ cancion6.addEventListener("click", function() {
 
 // Se debe mostrar solamente las canciones que el usuario marcó como favoritos.
 
+const espacioRelleno = document.createElement('article', 'p')
+espacioRelleno.textContent = 'NO HAY CANCIONES FAVORITAS AUN'
+
 // ***** FILA 1 *****
 const filaOneBoton = document.querySelector('#fila1BotonPlay');
 const filaOneCancion = document.querySelector('#fila1Cancion');
 const filaOneAlbum = document.querySelector('#fila1Album');
 const filaOneDuracion = document.querySelector('#fila1Duracion');
 const filaOneReproduccion = document.querySelector('#fila1Reproducciones');
-const cambiarVistaOne = document.querySelector('#cambiarVista');
 
-cambiarVistaOne.addEventListener('click', () => {
-    filaOneBoton.style.display = 'none';
-    filaOneCancion.style.display = 'none';
-    filaOneAlbum.style.display = 'none';
-    filaOneDuracion.style.display = 'none';
-    filaOneReproduccion.style.display = 'none';
-})
-
+filaOneBoton.style.display = 'none';
+filaOneCancion.style.display = 'none';
+filaOneAlbum.style.display = 'none';
+filaOneDuracion.style.display = 'none';
+filaOneReproduccion.style.display = 'none';
 
 // ***** FILA 2 *****
 const cambiarVistaTwo = document.querySelector('#cambiarVista2');
@@ -142,12 +141,18 @@ const filaTwoAlbum = document.querySelector('#fila2Album');
 const filaTwoDuracion = document.querySelector('#fila2Duracion');
 const filaTwoReproduccion = document.querySelector('#fila2Reproducciones');
 
+filaTwoBoton.style.display = 'none';
+filaTwoCancion.style.display = 'none';
+filaTwoAlbum.style.display = 'none';
+filaTwoDuracion.style.display = 'none';
+filaTwoReproduccion.style.display = 'none';
+
 cambiarVistaTwo.addEventListener('click', () => {
-    filaTwoBoton.style.display = 'none';
-    filaTwoCancion.style.display = 'none';
-    filaTwoAlbum.style.display = 'none';
-    filaTwoDuracion.style.display = 'none';
-    filaTwoReproduccion.style.display = 'none';
+    filaTwoBoton.style.display = 'block';
+    filaTwoCancion.style.display = 'block';
+    filaTwoAlbum.style.display = 'block';
+    filaTwoDuracion.style.display = 'block';
+    filaTwoReproduccion.style.display = 'block';
 })
 
 
@@ -160,12 +165,18 @@ const filaThreeAlbum = document.querySelector('#fila3Album');
 const filaThreeDuracion = document.querySelector('#fila3Duracion');
 const filaThreeReproduccion = document.querySelector('#fila3Reproducciones');
 
+filaThreeBoton.style.display = 'none';
+filaThreeCancion.style.display = 'none';
+filaThreeAlbum.style.display = 'none';
+filaThreeDuracion.style.display = 'none';
+filaThreeReproduccion.style.display = 'none';
+
 cambiarVistaThree.addEventListener('click', () => {
-    filaThreeBoton.style.display = 'none';
-    filaThreeCancion.style.display = 'none';
-    filaThreeAlbum.style.display = 'none';
-    filaThreeDuracion.style.display = 'none';
-    filaThreeReproduccion.style.display = 'none';
+    filaThreeBoton.style.display = 'block';
+    filaThreeCancion.style.display = 'block';
+    filaThreeAlbum.style.display = 'block';
+    filaThreeDuracion.style.display = 'block';
+    filaThreeReproduccion.style.display = 'block';
 })
 
 
@@ -178,12 +189,18 @@ const filaFourAlbum = document.querySelector('#fila4Album');
 const filaFourDuracion = document.querySelector('#fila4Duracion');
 const filaFourReproduccion = document.querySelector('#fila4Reproducciones');
 
+filaFourBoton.style.display = 'none';
+filaFourCancion.style.display = 'none';
+filaFourAlbum.style.display = 'none';
+filaFourDuracion.style.display = 'none';
+filaFourReproduccion.style.display = 'none';
+
 cambiarVistaFour.addEventListener('click', () => {
-    filaFourBoton.style.display = 'none';
-    filaFourCancion.style.display = 'none';
-    filaFourAlbum.style.display = 'none';
-    filaFourDuracion.style.display = 'none';
-    filaFourReproduccion.style.display = 'none';
+    filaFourBoton.style.display = 'block';
+    filaFourCancion.style.display = 'block';
+    filaFourAlbum.style.display = 'block';
+    filaFourDuracion.style.display = 'block';
+    filaFourReproduccion.style.display = 'block';
 })
 
 // ***** FILA 5 *****
@@ -195,14 +212,20 @@ const filaFiveAlbum = document.querySelector('#fila5Album');
 const filaFiveDuracion = document.querySelector('#fila5Duracion');
 const filaFiveReproduccion = document.querySelector('#fila5Reproducciones');
 
-cambiarVistaFive.addEventListener('click', () => {
-    filaFiveBoton.style.display = 'none';
-    filaFiveCancion.style.display = 'none';
-    filaFiveAlbum.style.display = 'none';
-    filaFiveDuracion.style.display = 'none';
-    filaFiveReproduccion.style.display = 'none';
-})
+filaFiveBoton.style.display = 'none';
+filaFiveCancion.style.display = 'none';
+filaFiveAlbum.style.display = 'none';
+filaFiveDuracion.style.display = 'none';
+filaFiveReproduccion.style.display = 'none';
 
+cambiarVistaFive.addEventListener('click', () => {
+    filaFiveBoton.style.display = 'block';
+    filaFiveCancion.style.display = 'block';
+    filaFiveAlbum.style.display = 'block';
+    filaFiveDuracion.style.display = 'block';
+    filaFiveReproduccion.style.display = 'block';
+    
+})
 
 // ***** FILA 6 *****
 const cambiarVistaSix = document.querySelector('#cambiarVista6');
@@ -213,10 +236,16 @@ const filaSixAlbum = document.querySelector('#fila6Album');
 const filaSixDuracion = document.querySelector('#fila6Duracion');
 const filaSixReproduccion = document.querySelector('#fila6Reproducciones');
 
+filaSixBoton.style.display = 'none';
+filaSixCancion.style.display = 'none';
+filaSixAlbum.style.display = 'none';
+filaSixDuracion.style.display = 'none';
+filaSixReproduccion.style.display = 'none';
+
 cambiarVistaSix.addEventListener('click', () => {
-    filaSixBoton.style.display = 'none';
-    filaSixCancion.style.display = 'none';
-    filaSixAlbum.style.display = 'none';
-    filaSixDuracion.style.display = 'none';
-    filaSixReproduccion.style.display = 'none';
+    filaSixBoton.style.display = 'block';
+    filaSixCancion.style.display = 'block';
+    filaSixAlbum.style.display = 'block';
+    filaSixDuracion.style.display = 'block';
+    filaSixReproduccion.style.display = 'block';
 })
