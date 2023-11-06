@@ -18,8 +18,8 @@
         <header>
             <div class="profile">
                 <div class="profile__info">
-                    <h3 class="profile__title">Nombre de usuario</h3>
-                    <a href="../index.html" class="profile__link-session"
+                    <h3 class="profile__title" id="profile-title">Nombre de usuario</h3>
+                    <a href="../index.html" class="profile__link-session" id="profile-link-session"
                         >Cerrar sesión</a
                     >
                 </div>
@@ -47,6 +47,7 @@
                             id="card"
                             class="form__input"
                         />
+
                         <label for="vto" class="form__label">VTO</label>
                         <input type="date" id="vto" class="form__input" />
                     </div>
@@ -58,6 +59,7 @@
                             id="cvc"
                             class="form__input"
                         />
+
                         <label for="fullname" class="form__label"
                             >Nombre y apellido</label
                         >
@@ -68,12 +70,16 @@
                             class="form__input"
                         />
                     </div>
+                    <div id="error-container" class="error-message">
+                        <p id="cardError"></p>
+                        <p id="cvcError"></p>
+                    </div>
                     <div class="form__button-group">
-                        <button type="button" class="form__input-button">
-                            <a href="index.html">Cancelar</a>
+                        <button type="button" class="form__input-button" onclick="cancelar()">
+                            <a href="premium.html">Cancelar</a>
                         </button>
-                        <button type="button" class="form__input-button">
-                            <a href="index.html">Pagar</a>
+                        <button type="button" class="form__input-button" onclick="validarCampos()">
+                            Pagar
                         </button>
                     </div>
                 </form>
@@ -90,5 +96,6 @@
             </p>
         </footer>
         <script src="../js/getPlanPremium.js"></script>
+        <script src="../js/pagar.js"></script>
     </body>
 </html>

@@ -280,6 +280,23 @@ h1 {
     padding: 10px;
 }
 
+.error-container {
+    display: none;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.error-show {
+    display: flex;
+}
+
+.error-message{
+    color: red;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 @media only screen and (max-width: 1535px) {
     .footer {
         width: 90%;
