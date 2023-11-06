@@ -85,6 +85,7 @@ const texto = document.querySelector(".song__description");
 
 cancion1.addEventListener("click", function() {
     songAside.src= '../img/canserbero cancion 1.jpg';
+    console.log(songAside.src);
     texto.textContent = "La canción Na de Canserbero es una canción de rap intensa y apasionada que se centra en los desafíos y luchas de ser un artista y una persona que se niega a conformarse con las normas y expectativas sociales. Las letras son crudas y poderosas, transmitiendo una sensación de frustración, ira y desafío.";
 })
 
@@ -125,12 +126,21 @@ const filaOneCancion = document.querySelector('#fila1Cancion');
 const filaOneAlbum = document.querySelector('#fila1Album');
 const filaOneDuracion = document.querySelector('#fila1Duracion');
 const filaOneReproduccion = document.querySelector('#fila1Reproducciones');
+const cambiarVistaOne = document.querySelector('#cambiarVista');
 
 filaOneBoton.style.display = 'none';
 filaOneCancion.style.display = 'none';
 filaOneAlbum.style.display = 'none';
 filaOneDuracion.style.display = 'none';
 filaOneReproduccion.style.display = 'none';
+
+// cambiarVistaOne.addEventListener('click', () => {
+//     filaOneBoton.style.display = 'none';
+//     filaOneCancion.style.display = 'none';
+//     filaOneAlbum.style.display = 'none';
+//     filaOneDuracion.style.display = 'none';
+//     filaOneReproduccion.style.display = 'none';
+// })
 
 // ***** FILA 2 *****
 const cambiarVistaTwo = document.querySelector('#cambiarVista2');
@@ -147,13 +157,13 @@ filaTwoAlbum.style.display = 'none';
 filaTwoDuracion.style.display = 'none';
 filaTwoReproduccion.style.display = 'none';
 
-cambiarVistaTwo.addEventListener('click', () => {
-    filaTwoBoton.style.display = 'block';
-    filaTwoCancion.style.display = 'block';
-    filaTwoAlbum.style.display = 'block';
-    filaTwoDuracion.style.display = 'block';
-    filaTwoReproduccion.style.display = 'block';
-})
+// cambiarVistaTwo.addEventListener('click', () => {
+//     filaTwoBoton.style.display = 'none';
+//     filaTwoCancion.style.display = 'none';
+//     filaTwoAlbum.style.display = 'none';
+//     filaTwoDuracion.style.display = 'none';
+//     filaTwoReproduccion.style.display = 'none';
+// })
 
 
 // ***** FILA 3 *****
@@ -171,13 +181,13 @@ filaThreeAlbum.style.display = 'none';
 filaThreeDuracion.style.display = 'none';
 filaThreeReproduccion.style.display = 'none';
 
-cambiarVistaThree.addEventListener('click', () => {
-    filaThreeBoton.style.display = 'block';
-    filaThreeCancion.style.display = 'block';
-    filaThreeAlbum.style.display = 'block';
-    filaThreeDuracion.style.display = 'block';
-    filaThreeReproduccion.style.display = 'block';
-})
+// cambiarVistaThree.addEventListener('click', () => {
+//     filaThreeBoton.style.display = 'none';
+//     filaThreeCancion.style.display = 'none';
+//     filaThreeAlbum.style.display = 'none';
+//     filaThreeDuracion.style.display = 'none';
+//     filaThreeReproduccion.style.display = 'none';
+// })
 
 
 // ***** FILA 4 *****
@@ -195,13 +205,13 @@ filaFourAlbum.style.display = 'none';
 filaFourDuracion.style.display = 'none';
 filaFourReproduccion.style.display = 'none';
 
-cambiarVistaFour.addEventListener('click', () => {
-    filaFourBoton.style.display = 'block';
-    filaFourCancion.style.display = 'block';
-    filaFourAlbum.style.display = 'block';
-    filaFourDuracion.style.display = 'block';
-    filaFourReproduccion.style.display = 'block';
-})
+// cambiarVistaFour.addEventListener('click', () => {
+//     filaFourBoton.style.display = 'none';
+//     filaFourCancion.style.display = 'none';
+//     filaFourAlbum.style.display = 'none';
+//     filaFourDuracion.style.display = 'none';
+//     filaFourReproduccion.style.display = 'none';
+// })
 
 // ***** FILA 5 *****
 const cambiarVistaFive = document.querySelector('#cambiarVista5');
@@ -218,14 +228,15 @@ filaFiveAlbum.style.display = 'none';
 filaFiveDuracion.style.display = 'none';
 filaFiveReproduccion.style.display = 'none';
 
-cambiarVistaFive.addEventListener('click', () => {
-    filaFiveBoton.style.display = 'block';
-    filaFiveCancion.style.display = 'block';
-    filaFiveAlbum.style.display = 'block';
-    filaFiveDuracion.style.display = 'block';
-    filaFiveReproduccion.style.display = 'block';
+// cambiarVistaFive.addEventListener('click', () => {
+//     filaFiveBoton.style.display = 'none';
+//     filaFiveCancion.style.display = 'none';
+//     filaFiveAlbum.style.display = 'none';
+//     filaFiveDuracion.style.display = 'none';
+//     filaFiveReproduccion.style.display = 'none';
     
-})
+    
+// })
 
 // ***** FILA 6 *****
 const cambiarVistaSix = document.querySelector('#cambiarVista6');
@@ -242,10 +253,10 @@ filaSixAlbum.style.display = 'none';
 filaSixDuracion.style.display = 'none';
 filaSixReproduccion.style.display = 'none';
 
-cambiarVistaSix.addEventListener('click', () => {
-    filaSixBoton.style.display = 'block';
-    filaSixCancion.style.display = 'block';
-    filaSixAlbum.style.display = 'block';
-    filaSixDuracion.style.display = 'block';
-    filaSixReproduccion.style.display = 'block';
-})
+// cambiarVistaSix.addEventListener('click', () => {
+//     filaSixBoton.style.display = 'none';
+//     filaSixCancion.style.display = 'none';
+//     filaSixAlbum.style.display = 'none';
+//     filaSixDuracion.style.display = 'none';
+//     filaSixReproduccion.style.display = 'none';
+// })

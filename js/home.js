@@ -71,19 +71,3 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-
-// CANCION 1
-const cambiarVistaOne = document.querySelector('#cambiarVista');
-const filaOneBoton = document.querySelector('#fila1BotonPlay');
-const filaOneCancion = document.querySelector('#fila1Cancion');
-const filaOneAlbum = document.querySelector('#fila1Album');
-const filaOneDuracion = document.querySelector('#fila1Duracion');
-const filaOneReproduccion = document.querySelector('#fila1Reproducciones');
-
-// cambiarVistaOne.addEventListener('click', () => {
-//     filaOneBoton.style.display = 'block';
-//     filaOneCancion.style.display = 'block';
-//     filaOneAlbum.style.display = 'block';
-//     filaOneDuracion.style.display = 'block';
-//     filaOneReproduccion.style.display = 'block';
-// })
