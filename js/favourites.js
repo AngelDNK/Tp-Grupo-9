@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
         // Agregar un evento al enlace de "Cerrar sesión" para marcar que el usuario cerró sesión
         profileLinkSession.addEventListener('click', function() {
-            localStorage.removeItem('loggedInUsername'); // Marcar que el usuario cerró sesión
+            localStorage.removeItem('loggedInUser'); // Marcar que el usuario cerró sesión
             profileTitle.textContent = 'Nombre de usuario'; // Restablecer el nombre de usuario en la interfaz
         });
     } else {
