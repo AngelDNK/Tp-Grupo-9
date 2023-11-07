@@ -98,21 +98,33 @@ document.addEventListener("DOMContentLoaded", function() {
     cancion3.addEventListener("click", function() {
         songAside.src= '../img/ciro cancion 3.jpg';
         texto.textContent = "La canción Caminando de Ciro y los Persas explora temas de resiliencia, determinación y abrazar la individualidad. Las letras describen el viaje del narrador, quien navega por los desafíos de la vida con un sentido de propósito y confianza en sí mismo.";
+        loggedInUsername.cancionSonando = "Ciro y los persas - Caminando";
+        localStorage.setItem('loggedInUser', JSON.stringify(loggedInUsername));
+        console.log(loggedInUsername);
     })
 
     cancion4.addEventListener("click", function() {
         songAside.src= '../img/wos cancion 4.jpg';
         texto.textContent = "La canción FREESTYLE (Live Set) de WOS explora temas de autoexpresión, libertad y luchas internas. Las letras profundizan en el viaje introspectivo del artista, abrazando su identidad única y encontrando consuelo en su arte."
+        loggedInUsername.cancionSonando = "Wos - Live Set";
+        localStorage.setItem('loggedInUser', JSON.stringify(loggedInUsername));
+        console.log(loggedInUsername);
     })
 
     cancion5.addEventListener("click", function() {
         songAside.src= '../img/tupac album 5.jpg';
         texto.textContent = "La canción Only God Can Judge Me de 2Pac (ft. Rappin' 4-Tay) explora la vida de los afroamericanos que viven en los guetos de Estados Unidos, donde se enfrentan a diario a la pobreza, la delincuencia y el racismo.";
+        loggedInUsername.cancionSonando = "Tupac - Only God Can Judge Me";
+        localStorage.setItem('loggedInUser', JSON.stringify(loggedInUsername));
+        console.log(loggedInUsername);
     })
 
     cancion6.addEventListener("click", function() {
         songAside.src= '../img/Idontwanttomissathing cancion 6.jpg';
         texto.textContent = "La canción I Don't Want to Miss a Thing de Aerosmith es una declaración de amor y devoción, expresando admiración por alguien tan envuelto en ellos que nunca quiere separarse de su lado. La letra habla del deseo de permanecer en el momento para siempre y nunca dejar ir su amor."
+        loggedInUsername.cancionSonando = "Aerosmith - I Don't Want to Miss a Thing";
+        localStorage.setItem('loggedInUser', JSON.stringify(loggedInUsername));
+        console.log(loggedInUsername);
     })
 
     const stars = document.querySelectorAll(".songs__star");
@@ -160,9 +172,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
-
 });
-
-
 
 // Al hacer click en las estrellas, el álbum se debe agregar/retirar como álbum favorito.
