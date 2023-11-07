@@ -113,7 +113,7 @@ a {
     background-color: rgba(29, 185, 84, 0.8)
 }
 
-.form__link {
+.form__linkProfile {
     color: #1DB954;
     text-decoration: underline;
     font-size: 16px;
@@ -124,7 +124,22 @@ a {
     padding-bottom: 20px;
 }
 
-.form__link:hover {
+.form__linkProfile:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+.form__linkpremium {
+    color: #1DB954;
+    text-decoration: underline;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    width: fit-content;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.form__linkpremium:hover {
     color: #ffffff;
     text-decoration: none;
 }

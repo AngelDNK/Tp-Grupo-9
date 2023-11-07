@@ -70,18 +70,23 @@
                     class="form__input"
                 >
             </div>
-            <a href="premium.html" class="form__link premium">Premium</a>
+            <a href="premium.html" class="form__linkpremium">Premium</a>
             <a href="../index.html" class="form__linkProfile" >Eliminar usuario</a>
             <div class="form__button-group">
                 <button class="form__input-button">
                     <a href="home.html">Volver al home</a>
                 </button>
-                <button type="submit" class="form__input-button">Guardar</button>
+                <button type="submit" class="form__input-button" id="saveButton">Guardar</button>
             </div>
+            <dialog id="dialogSaveChanges" class="dialogSave">
+                <p class="textSaveChanges">Datos guardados correctamente</p>
+                <button class="homeButton" id="homeButton">HOME</button>
+                <button class="closeButton" onclick="cerrarDialog()">CERRAR</button>
+            </dialog>
         </form>
     </div>
     <footer class="footer">
-        <script src="../js/profile.js"></script>
+        
         <p>
             Octavio Sancho | 39.510.073 - Tobias Rodriguez | 44.513.673 - Angel Leyes| 42.199.664
         </p>
@@ -89,5 +94,6 @@
             Ezequiel Lage | 38.175.930 - Agustin Dangelo | 44.263.625 - Juan Ignacio Ronquillo | 44.482.636
         </p>
     </footer>
+    <script src="../js/profile.js"></script>
 </body>
 </html>

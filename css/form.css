@@ -120,48 +120,29 @@ a {
     display: inline;
 }
 
-/* Estilo dialog*/
-
-.dialogSingin{
-   position: relative;
-    background-color: #000000;
-   margin-left: 40%;
-   top: 20%;
-   width: 20%;
-   border:1px solid #1DB954;
-   border-radius: 3px;
-
-}
-.dialogSingup{
+.dialogSingIn{
     position: relative;
     background-color: #000000;
-   margin-left: 40%;
-   top: 5%;
-   width: 20%;
-   border:1px solid #1DB954;
-   border-radius: 3px;
-
-}
-
-.dialogTextEmpty{
-    
-    
-    background-color: #000000;
-    margin: 10px;
-    border: 2px solid #1DB954;
+    margin-left: 40%;
+    top: 20%;
+    width: 20%;
+    border:1px solid #1DB954;
     border-radius: 3px;
-   
-    padding: 10px;
-    color: #ffffff;
+}
+.dialogSingUp{
+    position: relative;
+    background-color: #000000;
+    margin-left: 40%;
+    top: 5%;
+    width: 20%;
+    border:1px solid #1DB954;
+    border-radius: 3px;
 }
 .dialogTextIncorrect{
-    
-    
     background-color: #000000;
     margin: 10px;
     border: 2px solid #1DB954;
     border-radius: 3px;
-   
     padding: 10px;
     color: #ffffff;
 }
@@ -171,14 +152,10 @@ a {
     margin: 10px;
     border: 2px solid #1DB954;
     border-radius: 3px;
-   
     padding: 10px;
     color: #ffffff;
-
 }
-
 .buttonDialog{
-   
     background-color: #000000;
     margin: 10px;
     border: 2px solid #1DB954;
@@ -186,27 +163,22 @@ a {
     padding: 10px;
     color: #ffffff;
     width: 30%;
-
 }
-
-
-
 
 @media screen and (max-width: 1280px) {
     .form__container {
         width: 60%;
     }
-    .dialogSingin{
+    .dialogSignIn{
         width: 30%;
         margin-left: 36%;
         top: 18%;
     }
-    .dialogSingup{
+    .dialogSignUp{
         width: 30%;
         margin-left: 36%;
         top: 3%;
     }
-
     .footer {
         font-size: 14px;
     }
@@ -216,12 +188,12 @@ a {
     .form__container {
         width: 75%;
     }
-    .dialogSingin{
+    .dialogSingIn{
         width: 40%;
         margin-left: 32%;
         top: 18%;
     }
-    .dialogSingup{
+    .dialogSingUp{
         width: 35%;
         margin-left: 34%;
         top: 1.5%;
@@ -232,32 +204,28 @@ a {
     .form__container {
         width: 75%;
     }
-
     .form {
         width: 100%;
     }
-    .dialogSingin{
+    .dialogSingIn{
         width: 45%;
         margin-left: 28%;
         top: 13%;
         font-size: smaller;
     }
-    .dialogSingup{
+    .dialogSingUp{
         width: 45%;
         margin-left: 28%;
         top: 1%;
         font-size: x-small;
-
     }
     .buttonDialog{
         width: 50%;
         font-size: x-small;
     }
     .dialogTextIncorrect{
-        
         font-size: smaller;
     }
-
     .footer {
         display: none;
     }

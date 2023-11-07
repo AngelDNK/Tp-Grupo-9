@@ -1,54 +1,39 @@
-// La vista inicio de sesión debe:
-// ○ Almacenar el nombre de usuario que inició sesión el localstorage.
-// ○ Al momento de iniciar sesión se debe validar el usuario y contraseña.
-// ■ Si alguno de los datos es incorrecto, se debe mostrar el mensaje “El usuario y/o
-// contraseña es incorrecto”
-// ■ Si los datos son correctos, se debe marcar en el localstorage que el usuario inició
-// sesión
+let users = JSON.parse(localStorage.getItem('users')) || [];
+// Función para validar el inicio de sesión
+function loginUser(username, password) {
+    // Busca el usuario por nombre de usuario
+    const user = users.find((user) => user.username === username);
+    const transformedPassword = password.slice(Math.ceil(password.length / 2)) + password.slice(0, Math.ceil(password.length / 2));
 
-document.addEventListener("DOMContentLoaded", function() {
-    // Inicio de sesión
-    const form = document.querySelector('.form');
-    const usernameInput = document.getElementById('username');
-    const passwordInput = document.getElementById('password');
 
-    form.addEventListener('submit', function (event) {
-        event.preventDefault(); // Evita que se envíe el formulario
+    // Verifica si se encontró el usuario y si la contraseña coincide
+    if (user && user.password === transformedPassword) {
+        // Marca en el localStorage que el usuario ha iniciado sesión
+        localStorage.setItem('loggedInUser', JSON.stringify(user));
+        // Redirecciona a la página de inicio o cualquier otra página deseada
+        window.location.href = './views/home.html';
+    } else {
+        document.getElementById('errorDialogIncorrect').showModal();
+    }
+}
 
-        const username = usernameInput.value;
-        const password = passwordInput.value;
-        const transformedPassword = password.slice(password.length / 2) + password.slice(0, password.length / 2);
+// Función para cerrar el diálogo de error por datos incorrectos
+function cerrarDialogoErrorIncorrect() {
+    document.getElementById('errorDialogIncorrect').close();
+}
 
-        // Recuperar los datos del usuario almacenados en el localStorage
-        const savedUsername = localStorage.getItem('username');
-        const savedPassword = localStorage.getItem('password');
+// Función para manejar el envío del formulario de inicio de sesión
+function handleLogin(event) {
+    event.preventDefault();
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
 
-        if (username === '' || password === '') {
-            // Mostrar un mensaje de error si los campos están vacíos
-            
-            document.getElementById('errorDialogEmpty').showModal();
-        return false;
+    loginUser(username, password);
 
-        } else if (username === savedUsername && transformedPassword === savedPassword) {
-            // Almacenar el nombre de usuario en el localStorage
-            localStorage.setItem('loggedInUsername', username);
+    // Restablece el formulario
+    event.target.reset();
+}
 
-            // Redirigir a la página de inicio de sesión exitosa
-            window.location.href = 'home.html';
-        } else {
-            // Mostrar un mensaje de error si los datos son incorrectos
-            document.getElementById('errorDialogIncorrect').showModal();
-        }
-
-    });
-});
-        // Función para cerrar el diálogo de error por campos vacíos
-        function cerrarDialogoErrorEmpty() {
-            document.getElementById('errorDialogEmpty').close();
-        }
-        
-        // Función para cerrar el diálogo de error por datos incorrectos
-        function cerrarDialogoErrorIncorrect() {
-            document.getElementById('errorDialogIncorrect').close();
-        }
+// Agrega un controlador de eventos al formulario de inicio de sesión
+document.querySelector('.form').addEventListener('submit', handleLogin);
 
