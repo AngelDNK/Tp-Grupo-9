@@ -85,8 +85,10 @@ const texto = document.querySelector(".song__description");
 
 cancion1.addEventListener("click", function() {
     songAside.src= '../img/canserbero cancion 1.jpg';
-    console.log(songAside.src);
     texto.textContent = "La canción Na de Canserbero es una canción de rap intensa y apasionada que se centra en los desafíos y luchas de ser un artista y una persona que se niega a conformarse con las normas y expectativas sociales. Las letras son crudas y poderosas, transmitiendo una sensación de frustración, ira y desafío.";
+    loggedInUser.cancionSonando = "Canserbero - Na";
+    localStorage.setItem('loggedInUser', JSON.stringify(loggedInUser));
+    console.log(loggedInUser);
 })
 
 cancion2.addEventListener("click", function() {
@@ -114,12 +116,11 @@ cancion6.addEventListener("click", function() {
     texto.textContent = "La canción I Don't Want to Miss a Thing de Aerosmith es una declaración de amor y devoción, expresando admiración por alguien tan envuelto en ellos que nunca quiere separarse de su lado. La letra habla del deseo de permanecer en el momento para siempre y nunca dejar ir su amor."
 })
 
+// Parrafo de relleno
+const espacioRelleno = document.getElementById('mensaje__parrafo')
+espacioRelleno.textContent = 'NO HAY CANCIONES FAVORITAS AUN';
 
 // Se debe mostrar solamente las canciones que el usuario marcó como favoritos.
-
-const espacioRelleno = document.createElement('article', 'p')
-espacioRelleno.textContent = 'NO HAY CANCIONES FAVORITAS AUN'
-
 // ***** FILA 1 *****
 const filaOneBoton = document.querySelector('#fila1BotonPlay');
 const filaOneCancion = document.querySelector('#fila1Cancion');
@@ -234,8 +235,6 @@ filaFiveReproduccion.style.display = 'none';
 //     filaFiveAlbum.style.display = 'none';
 //     filaFiveDuracion.style.display = 'none';
 //     filaFiveReproduccion.style.display = 'none';
-    
-    
 // })
 
 // ***** FILA 6 *****
@@ -260,3 +259,28 @@ filaSixReproduccion.style.display = 'none';
 //     filaSixDuracion.style.display = 'none';
 //     filaSixReproduccion.style.display = 'none';
 // })
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const gridContainer = document.getElementById('grid-container');
+    favoritos.map(favorito => {
+        gridContainer.innerHTML += ` <article class="songs__content" id="fila1BotonPlay">
+        <img src="../img/boton play.png" alt="Reproducir" width="90px" class="songs__button-img">
+    </article>
+    <article class="songs__content" id="fila1Cancion">
+        <img class="songs__image" id="song__first" src="../img/canserbero cancion 1.jpg" alt="Canserbero - Na" width="201vh">
+        <img src="../img/estrella.png" class="songs__star" id="cambiarVista">
+    </article>
+    <article class="songs__content" id="fila1Album">
+        <img class="songs__image" src="../img/canserbero album 1.jpg" alt="Vida" width="201vh">
+        <img src="../img/estrella.png" class="songs__star">
+    </article>
+    <article class="songs__info" id="fila1Duracion">
+        <p>6:22</p>
+    </article>
+    <article class="songs__info" id="fila1Reproducciones">
+        <p>17.135.570</p>
+    </article>
+    `;
+    });
+})

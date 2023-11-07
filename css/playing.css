@@ -70,6 +70,12 @@ footer {
     height: 50px;
 }
 
+#mensaje__parrafo{
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
 .songs__category {
     display: flex;
     background-color: #1db954;

@@ -25,6 +25,7 @@ function registerUser(username, password, confirmPassword, email, birthdate, pre
             birthdate,
             albumsFavoritos: [],
             premium,
+            cancionSonando: ""
         };
     
         // Agrega el usuario al array de usuarios
