@@ -85,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function() {
         loggedInUsername.cancionSonando = "Canserbero - Na";
         localStorage.setItem('loggedInUser', JSON.stringify(loggedInUsername));
         console.log(loggedInUsername);
+        cancion1.style.display = 'block'
     })
 
     cancion2.addEventListener("click", function() {
@@ -172,6 +173,25 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
+
+    const starsFavs = document.querySelectorAll(".songs__star");
+    const mensaje = document.getElementById('#mensaje__parrafo')
+
+    starsFavs.addEventListener('click', (star) => {
+        const esFavorito = star.classList.contains("selected");
+        const elementos = gridContainer.querySelectorAll('.songs__content, .songs__info');
+
+        if(esFavorito){
+            elementos.style.display = 'block'
+        }
+
+        if(elementos.length > 0){
+            gridContainer.removeChild(elementos);
+        }else{
+            mensaje.style.display = 'block'
+        }
+    })
+
 });
 
 // Se debe mostrar solamente las canciones que el usuario marcó como favoritos.

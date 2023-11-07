@@ -78,6 +78,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const cancion6 = document.querySelector("#song__sixth");
     const songAside = document.querySelector(".song__image");
     const texto = document.querySelector(".song__description");
+    const gridContainer = document.querySelector('#grid-container');
 
     cancion1.addEventListener("click", function() {
         songAside.src= '../img/canserbero cancion 1.jpg';
