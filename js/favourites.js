@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     let cancionesContainer = document.getElementById('grid-container');
     
-    
     const profileTitle = document.querySelector('.profile__title');
     const profileLinkSession = document.querySelector('.profile__link-session');
     
@@ -185,7 +184,6 @@ document.addEventListener("DOMContentLoaded", function() {
             // Verificar si el álbum ya es un favorito
             const isFavorite = star.getAttribute("alt");
             
-
             if (isFavorite) {
                 // Si ya es un favorito, quitarlo de la lista de favoritos y actualizar el estilo
                 cancionesFavoritas.splice(index, 1);
@@ -202,23 +200,9 @@ document.addEventListener("DOMContentLoaded", function() {
             users[userIndex] = loggedInUsername
             localStorage.setItem('users', JSON.stringify(users));
 
-            cancionesContainer.innerHTML = `
-                <article class="songs__white">
-                </article>
-                <article class="songs__category">
-                    <h4>Canción</h4>
-                </article>
-                <article class="songs__category">
-                    <h4>Album</h4>
-                </article>
-                <article class="songs__category">
-                    <h4>Duración</h4>
-                </article>
-                <article class="songs__category">
-                    <h4>Reproducciones</h4>
-                </article>
-            `;
+
             mostrarCancionesFavoritas(cancionesContainer);
+            
         });
     });
 
