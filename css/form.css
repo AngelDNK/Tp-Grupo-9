@@ -138,7 +138,8 @@ a {
     border:1px solid #1DB954;
     border-radius: 3px;
 }
-.dialogTextIncorrect{
+.dialogTextIncorrect,
+.dialogTextSuccess{
     background-color: #000000;
     margin: 10px;
     border: 2px solid #1DB954;
@@ -224,6 +225,9 @@ a {
         font-size: x-small;
     }
     .dialogTextIncorrect{
+        font-size: smaller;
+    }
+    .dialogTextSuccess{
         font-size: smaller;
     }
     .footer {
