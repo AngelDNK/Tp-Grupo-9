@@ -76,12 +76,17 @@
                 <button class="form__input-button">
                     <a href="home.html">Volver al home</a>
                 </button>
-                <button type="submit" class="form__input-button" id="saveButton">Guardar</button>
+                <button type="submit" class="form__input-savebutton" id="saveButton">Guardar</button>
             </div>
             <dialog id="dialogSaveChanges" class="dialogSave">
+                <div class="dialogBox">
                 <p class="textSaveChanges">Datos guardados correctamente</p>
-                <button class="homeButton" id="homeButton">HOME</button>
-                <button class="closeButton" onclick="cerrarDialog()">CERRAR</button>
+                <button class="dialogSaveBtn" id="homeButton">
+                    <a href="home.html" class="homeButton">HOME</a>
+                </button>
+                <button class="closeButton" onclick="cerrarDialogSaveChanges()">CERRAR</button>
+                </div>
+            
             </dialog>
         </form>
     </div>

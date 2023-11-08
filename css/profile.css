@@ -112,6 +112,21 @@ a {
 .form__input-button:hover {
     background-color: rgba(29, 185, 84, 0.8)
 }
+.form__input-savebutton {
+    width: 35%;
+    background-color: #1DB954;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form__input-savebutton:hover {
+    background-color: rgba(29, 185, 84, 0.8)
+}
 
 .form__linkProfile {
     color: #1DB954;
