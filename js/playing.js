@@ -91,6 +91,36 @@ document.addEventListener("DOMContentLoaded", function() {
     const songAside = document.querySelector(".song__image");
     const texto = document.querySelector(".song__description");
 
+    if(loggedInUsername.cancionSonando === "Canserbero - Na"){
+        songAside.src= '../img/canserbero cancion 1.jpg';
+        texto.textContent = "La canción Na de Canserbero es una canción de rap intensa y apasionada que se centra en los desafíos y luchas de ser un artista y una persona que se niega a conformarse con las normas y expectativas sociales. Las letras son crudas y poderosas, transmitiendo una sensación de frustración, ira y desafío.";
+    }
+
+    if(loggedInUsername.cancionSonando === "Los Redondos - Salando las heridas"){
+        songAside.src= '../img/salando las heridas cancion 2.jpg';
+        texto.textContent = "La canción Salando las Heridas de Patricio Rey y sus Redonditos de Ricota explora temas de traición, supervivencia y las consecuencias de las acciones de uno. A través de imágenes vívidas y lenguaje metafórico, las letras pintan un cuadro de una persona que ha engañado y dañado repetidamente a otros pero que ahora enfrenta las repercusiones.";
+    }
+
+    if(loggedInUsername.cancionSonando === "Ciro y los persas - Caminando"){
+        songAside.src= '../img/ciro cancion 3.jpg';
+        texto.textContent = "La canción Caminando de Ciro y los Persas explora temas de resiliencia, determinación y abrazar la individualidad. Las letras describen el viaje del narrador, quien navega por los desafíos de la vida con un sentido de propósito y confianza en sí mismo.";
+    }
+
+    if(loggedInUsername.cancionSonando === "Wos - Live Set"){
+        songAside.src= '../img/wos cancion 4.jpg';
+        texto.textContent = "La canción FREESTYLE (Live Set) de WOS explora temas de autoexpresión, libertad y luchas internas. Las letras profundizan en el viaje introspectivo del artista, abrazando su identidad única y encontrando consuelo en su arte."
+    }
+    
+    if(loggedInUsername.cancionSonando === "Tupac - Only God Can Judge Me"){
+        songAside.src= '../img/tupac album 5.jpg';
+        texto.textContent = "La canción Only God Can Judge Me de 2Pac (ft. Rappin' 4-Tay) explora la vida de los afroamericanos que viven en los guetos de Estados Unidos, donde se enfrentan a diario a la pobreza, la delincuencia y el racismo.";
+    }
+
+    if(loggedInUsername.cancionSonando === "Aerosmith - I Don't Want to Miss a Thing"){
+        songAside.src= '../img/Idontwanttomissathing cancion 6.jpg';
+        texto.textContent = "La canción I Don't Want to Miss a Thing de Aerosmith es una declaración de amor y devoción, expresando admiración por alguien tan envuelto en ellos que nunca quiere separarse de su lado. La letra habla del deseo de permanecer en el momento para siempre y nunca dejar ir su amor."
+    }
+
     cancion1.addEventListener("click", function() {
         songAside.src= '../img/canserbero cancion 1.jpg';
         texto.textContent = "La canción Na de Canserbero es una canción de rap intensa y apasionada que se centra en los desafíos y luchas de ser un artista y una persona que se niega a conformarse con las normas y expectativas sociales. Las letras son crudas y poderosas, transmitiendo una sensación de frustración, ira y desafío.";
