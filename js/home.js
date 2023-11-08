@@ -79,11 +79,6 @@ document.addEventListener("DOMContentLoaded", function() {
         texto.textContent = "La canción Na de Canserbero es una canción de rap intensa y apasionada que se centra en los desafíos y luchas de ser un artista y una persona que se niega a conformarse con las normas y expectativas sociales. Las letras son crudas y poderosas, transmitiendo una sensación de frustración, ira y desafío.";
     }
 
-    if(loggedInUser.cancionSonando === "Los Redondos - Salando las heridas"){
-        songAside.src= '../img/salando las heridas cancion 2.jpg';
-        texto.textContent = "La canción Salando las Heridas de Patricio Rey y sus Redonditos de Ricota explora temas de traición, supervivencia y las consecuencias de las acciones de uno. A través de imágenes vívidas y lenguaje metafórico, las letras pintan un cuadro de una persona que ha engañado y dañado repetidamente a otros pero que ahora enfrenta las repercusiones.";
-    }
-
     if(loggedInUser.cancionSonando === "Ciro y los persas - Caminando"){
         songAside.src= '../img/ciro cancion 3.jpg';
         texto.textContent = "La canción Caminando de Ciro y los Persas explora temas de resiliencia, determinación y abrazar la individualidad. Las letras describen el viaje del narrador, quien navega por los desafíos de la vida con un sentido de propósito y confianza en sí mismo.";
@@ -101,6 +96,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if(loggedInUser.cancionSonando === "Aerosmith - I Don't Want to Miss a Thing"){
         songAside.src= '../img/Idontwanttomissathing cancion 6.jpg';
-        texto.textContent = "La canción I Don't Want to Miss a Thing de Aerosmith es una declaración de amor y devoción, expresando admiración por alguien tan envuelto en ellos que nunca quiere separarse de su lado."
+        texto.textContent = "La canción I Don't Want to Miss a Thing de Aerosmith es una declaración de amor y devoción"
     }
 });
