@@ -17,6 +17,7 @@ input {
 }
 
 .songs__section {
+    justify-content: flex-start;
     color: #ffffff;
 }
 
