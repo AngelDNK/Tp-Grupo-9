@@ -24,6 +24,7 @@ function registerUser(username, password, confirmPassword, email, birthdate, pre
             email,
             birthdate,
             albumsFavoritos: [],
+            cancionesFavoritas: [],
             premium,
             cancionSonando: ""
         };

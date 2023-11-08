@@ -26,9 +26,18 @@ document.addEventListener("DOMContentLoaded", function() {
         return favoritos ? JSON.parse(favoritos) : [];
     }
 
+    function cargarCancionesFavoritas() {
+        const cancionesFavoritas = localStorage.getItem("cancionesFavoritas");
+        return cancionesFavoritas ? JSON.parse(cancionesFavoritas) : [];
+    }
+
     // Función para guardar los álbumes favoritos en el localStorage
     function guardarAlbumsFavoritos(favoritos) {
         localStorage.setItem("favoritos", JSON.stringify(favoritos));
+    }
+
+    function guardarCancionesFavoritas(cancionesFavoritas) {
+        localStorage.setItem("cancionesFavoritas", JSON.stringify(cancionesFavoritas));
     }
 
     // Seleccionar todos los elementos con la clase 'songs__article'
@@ -36,15 +45,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Cargar los álbumes favoritos existentes desde el localStorage
     const favoritos = cargarAlbumsFavoritos();
+    const cancionesFavoritas = cargarCancionesFavoritas();
 
     // Iterar a través de los elementos
     songsArticles.forEach((article) => {
         // Encontrar la estrella dentro de este artículo
         const star = article.querySelector(".songs__star");
         
-
         // Obtener el nombre del álbum
         const albumName = article.querySelector(".songs__image").getAttribute("src");
+        const songName = document.querySelectorAll(".songs")[index].getAttribute("alt");
 
         // Agregar un manejador de eventos al hacer clic en la estrella
         star.addEventListener("click", () => {
@@ -55,13 +65,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (indexToRemove !== -1) {
                     favoritos.splice(indexToRemove, 1);
                     guardarAlbumsFavoritos(favoritos);
-                    
+                    guardarCancionesFavoritas(cancionesFavoritas);
                 }
                 star.classList.remove("selected");
             } else {
                 // Si no es un favorito, agregarlo a la lista de favoritos y actualizar el estilo
                 favoritos.push(albumName);
+                cancionesFavoritas.push(songName);
                 guardarAlbumsFavoritos(favoritos);
+                guardarCancionesFavoritas(cancionesFavoritas);
                 star.classList.add("selected");
                 
 
@@ -78,7 +90,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const cancion6 = document.querySelector("#song__sixth");
     const songAside = document.querySelector(".song__image");
     const texto = document.querySelector(".song__description");
-    const gridContainer = document.querySelector('#grid-container');
 
     cancion1.addEventListener("click", function() {
         songAside.src= '../img/canserbero cancion 1.jpg';
@@ -86,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
         loggedInUsername.cancionSonando = "Canserbero - Na";
         localStorage.setItem('loggedInUser', JSON.stringify(loggedInUsername));
         console.log(loggedInUsername);
+        cancion1.style.display = 'block'
     })
 
     cancion2.addEventListener("click", function() {
@@ -128,14 +140,16 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log(loggedInUsername);
     })
 
-    const stars = document.querySelectorAll(".songs__star");
+    const starsSong = document.querySelectorAll(".fav-song");
+    const starsAlbum = document.querySelectorAll('.fav-album');
 
     const users = JSON.parse(localStorage.getItem('users'));
 
     const userIndex = users.findIndex((user) => user.username === loggedInUsername.username);
 
     // Iterar a través de las estrellas
-    stars.forEach((star, index) => {
+    // ESTRELLA ALBUM
+    starsAlbum.forEach((star, index) => {
         star.addEventListener("click", () => {
             // Verificar si el álbum ya es un favorito
             const isFavorite = star.classList.contains("selected");
@@ -153,6 +167,37 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Actualizar la lista de álbumes favoritos del usuario en el objeto del usuario
             loggedInUsername.albumsFavoritos = favoritos;
+
+            // Actualizar el objeto del usuario en el localStorage
+            localStorage.setItem('loggedInUser', JSON.stringify(loggedInUsername));
+
+            // Actualizar el array de usuarios en el localStorage
+            users[userIndex] = loggedInUsername
+            localStorage.setItem('users', JSON.stringify(users));
+        });
+    });
+
+    // ESTRELLA CANCION
+    console.log(starsSong);
+    starsSong.forEach((star, index) => {
+        star.addEventListener("click", () => {
+            // Verificar si el álbum ya es un favorito
+            const isFavorite = star.classList.contains("selected");
+            const songName = document.querySelectorAll(".songs")[index].getAttribute("alt");
+            console.log(songName);
+
+            if (isFavorite) {
+                // Si ya es un favorito, quitarlo de la lista de favoritos y actualizar el estilo
+                cancionesFavoritas.splice(cancionesFavoritas.indexOf(songName), 1);
+                star.classList.remove("selected");
+            } else {
+                // Si no es un favorito, agregarlo a la lista de favoritos y actualizar el estilo
+                cancionesFavoritas.push(songName);
+                star.classList.add("selected");
+            }
+
+            // Actualizar la lista de álbumes favoritos del usuario en el objeto del usuario
+            loggedInUsername.cancionesFavoritas = cancionesFavoritas;
 
             // Actualizar el objeto del usuario en el localStorage
             localStorage.setItem('loggedInUser', JSON.stringify(loggedInUsername));

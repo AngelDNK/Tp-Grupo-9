@@ -256,7 +256,7 @@ main {
 .selected {
     opacity: 0.8;
     filter: hue-rotate(80deg);
-    background-color: red;
+    background-color: green;
 }
 
 /* Estilo del audio */

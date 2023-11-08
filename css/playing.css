@@ -200,7 +200,8 @@ footer {
         width: 100px;
     }
 
-    .songs__star {
+    .songs__star,
+    .fav-album {
         left: 60%;
         top: 9%;
     }
