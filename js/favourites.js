@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function cargarCancionesFavoritas() {
-        const cancionesFavoritas = localStorage.getItem("cancionesFavoritas");
-        return cancionesFavoritas ? JSON.parse(cancionesFavoritas) : [];
+        const user = JSON.parse(localStorage.getItem("loggedInUser"));
+        return user.cancionesFavoritas ? user.cancionesFavoritas : [];
     }
 
     // Función para guardar los álbumes favoritos en el localStorage
@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Cargar los álbumes favoritos existentes desde el localStorage
     const favoritos = cargarAlbumsFavoritos();
     const cancionesFavoritas = cargarCancionesFavoritas();
+    console.log(cancionesFavoritas);
 
     // Iterar a través de los elementos
     songsArticles.forEach((article) => {
@@ -127,14 +128,6 @@ document.addEventListener("DOMContentLoaded", function() {
         
     })
 
-    cancion2.addEventListener("click", function() {
-        songAside.src= '../img/salando las heridas cancion 2.jpg';
-        texto.textContent = "La canción Salando las Heridas de Patricio Rey y sus Redonditos de Ricota explora temas de traición, supervivencia y las consecuencias de las acciones de uno. A través de imágenes vívidas y lenguaje metafórico, las letras pintan un cuadro de una persona que ha engañado y dañado repetidamente a otros pero que ahora enfrenta las repercusiones.";
-        loggedInUsername.cancionSonando = "Los Redondos - Salando las heridas";
-        localStorage.setItem('loggedInUser', JSON.stringify(loggedInUsername));
-        
-    })
-
     cancion3.addEventListener("click", function() {
         songAside.src= '../img/ciro cancion 3.jpg';
         texto.textContent = "La canción Caminando de Ciro y los Persas explora temas de resiliencia, determinación y abrazar la individualidad. Las letras describen el viaje del narrador, quien navega por los desafíos de la vida con un sentido de propósito y confianza en sí mismo.";
@@ -205,20 +198,21 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // ESTRELLA CANCION
-    starsSong.forEach((star, index) => {
+    starsSong.forEach((star) => {
         star.addEventListener("click", () => {
             // Verificar si el álbum ya es un favorito
-            const isFavorite = star.getAttribute("alt");
-            
-
-            if (isFavorite) {
+            const cancionSeleccionada = star.getAttribute("alt");
+            let cancionesFiltradas;
+            console.log(cancionSeleccionada);
+        
+            if (cancionSeleccionada) {
                 // Si ya es un favorito, quitarlo de la lista de favoritos y actualizar el estilo
-                cancionesFavoritas.splice(index, 1);
+                cancionesFiltradas = cancionesFavoritas.filter(song => song !== cancionSeleccionada);
                 
             }
 
             // Actualizar la lista de álbumes favoritos del usuario en el objeto del usuario
-            loggedInUsername.cancionesFavoritas = cancionesFavoritas;
+            loggedInUsername.cancionesFavoritas = cancionesFiltradas;
 
             // Actualizar el objeto del usuario en el localStorage
             localStorage.setItem('loggedInUser', JSON.stringify(loggedInUsername));
@@ -281,28 +275,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <p>17.135.570</p>
                 </article>
                 `;
-            }
-    
-            if(cancion === "Patricio Rey y sus redonditos de ricota - Salando las heridas"){
-                cancionesContainer.innerHTML += `  
-                <article class="songs__content" id="fila2BotonPlay">
-                    <img src="../img/boton play.png" alt="Reproducir" width="90px" class="songs__button-img">
-                </article>
-                <article class="songs__content" id="fila2Cancion">
-                    <img class="songs__image songs" id="song__second" src="../img/salando las heridas cancion 2.jpg" alt="Patricio Rey y sus redonditos de ricota - Salando las heridas" width="201vh">
-                    <img src="../img/estrella.png" class="songs__star fav-song selected" alt="Patricio Rey y sus redonditos de ricota - Salando las heridas">
-                </article>
-                <article class="songs__content" id="fila2Album">
-                    <img class="songs__image" src="../img/patricio-rey-logo-3048C74D38-seeklogo.com.png" alt="La Mosca y La Sopa" width="201vh">
-                    <img src="../img/estrella.png" class="songs__star fav-album" id="sacarVista">
-                </article>
-                <article class="songs__info" id="fila2Duracion">
-                    <p>5:02</p>
-                </article>
-                <article class="songs__info" id="fila2Reproducciones">
-                    <p>4.063.894</p>
-                </article>
-                `;
+
             }
     
             if(cancion === "Ciro - Caminando"){
